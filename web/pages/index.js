@@ -41,9 +41,9 @@ export default function Home() {
         </Flex>
         <Section
           bg='black'
-          heading="What no Social Network has done before"
-          subhead="You can do it now!">
-          Learn while you scroll through feeds endlessly.
+          heading="What no Social Network has done before for Professionals"
+          subhead="Gamify learning!">
+          {/* Learn while you scroll through feeds endlessly. */}
         </Section>
       </div>
       {/* <Footer /> */}
