@@ -26,7 +26,7 @@ export default function Home() {
           {/* <Typography variant="body2" color="initial">COMING SOON</Typography> */}
         </div>
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
