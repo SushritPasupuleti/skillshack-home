@@ -35,15 +35,13 @@ export default function Home() {
       <div className={styles.app}>
         {/* <NavBar /> */}
         <div className={styles.appBody}>
-          <Relative pb={5} color="white">
+          {/* <Relative pb={5} color="white">
             <Absolute zIndex={1} left={0} right={0} top={0}>
               <Flex is="header" p={3}>
                 <NavLink href="/" fontSize={3}>skillShack(⚡);</NavLink>
-                {/* <NavLink href="#" ml='auto'>Link 1</NavLink>
-              <NavLink href="#">Link 2</NavLink> */}
               </Flex>
             </Absolute>
-          </Relative>
+          </Relative> */}
           <Hero
             color="white"
             bg="black"
