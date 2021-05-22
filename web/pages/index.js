@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import HeaderImage from '../components/HeaderImage'
 import { Provider, Heading, Subhead, NavLink, Relative, Absolute, Small } from 'rebass'
 import {
-  Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist
+  Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist, Contributor
 } from 'react-landing-page'
 
 export default function Home() {
@@ -73,6 +73,23 @@ export default function Home() {
           <CallToAction
           // href='/getting-started'
           >Get Notified!</CallToAction>
+        </Section>
+        <Section
+          bg='black'
+          color="white">
+          <Heading textAlign="center">Made by</Heading>
+          <br/>
+          <Flex justifyContent="space-around">
+            <Contributor
+              fullName="Sushrit Pasupuleti"
+              title="CEO & CTO"
+              avatar="/me.jpg"
+            >
+              <Flex>
+                <NavLink href='https://sushritpasupuleti.github.io/'>Profile</NavLink>
+              </Flex>
+            </Contributor>
+          </Flex>
         </Section>
         <Flex color="white" is="footer" alignItems="center" p={3}>
           <NavLink children="Instagram" href="#" />
