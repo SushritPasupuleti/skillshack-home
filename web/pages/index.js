@@ -75,6 +75,7 @@ export default function Home() {
           >Get Notified!</CallToAction>
         </Section>
         <Section
+        style={{marginTop: '-6rem'}}
           bg='black'
           color="white">
           <Heading textAlign="center">Made by</Heading>
