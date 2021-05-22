@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Typography from '@material-ui/core/Typography'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <title>skillShack</title>
         <link rel="icon" href="/applogox64.ico" />
       </Head>
-      <p>Hi!</p>
+      <Typography variant="h2" color="initial">skillShack(⚡);</Typography>
     </div>
   )
 }
