@@ -82,7 +82,7 @@ const useStyles = makeStyles(({ palette, typography }) => ({
         },
     },
     info: {
-        ...typography.caption,
+        ...typography.body1,
         color: palette.text.hint,
         marginTop: 8,
     }
@@ -149,7 +149,7 @@ export default function Footer(props) {
                             </Typography>
 
                             <Typography className={classes.info}>
-                                <a index={1}>
+                                <a href="mailto:info.braggi@gmail.com">
                                     info.braggi@gmail.com
                   </a>
                             </Typography>
@@ -221,7 +221,7 @@ export default function Footer(props) {
                             <SocialProvider useStyles={usePoofSocialLinkStyles}>
                                 <SocialLink brand={'Twitter'} />
                                 <SocialLink brand={'Instagram'} />
-                                <SocialLink brand={'GithubCircle'}/>
+                                <SocialLink brand={'GithubCircle'} />
                             </SocialProvider>
                         </Grid>
                     </Grid>
