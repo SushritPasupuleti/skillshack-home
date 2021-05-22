@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
     },
+    appbar: {
+        backgroundColor: '#000',
+    }
 }));
 
 export default function NavBar() {
@@ -24,7 +27,7 @@ export default function NavBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="fixed">
+            <AppBar position="fixed" className={classes.appbar}>
                 <Toolbar>
                     {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
