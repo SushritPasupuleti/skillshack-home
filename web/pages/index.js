@@ -16,7 +16,7 @@ export default function Home() {
       <Head>
         <title>skillShack</title>
         <link rel="icon" href="/applogox64.ico" />
-        <meta property="og:image" content="https://www.skillshack.dev/letterLogoClippedColored.png"/>
+        <meta property="og:image" content="https://www.skillshack.dev/logoClipped.png"/>
         <meta property="og:title" content="skillShack(⚡);"/>
       </Head>
       <div className={styles.app}>
