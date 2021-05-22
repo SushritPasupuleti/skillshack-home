@@ -82,11 +82,11 @@ export default function Home() {
           <Flex justifyContent="space-around">
             <Contributor
               fullName="Sushrit Pasupuleti"
-              title="CEO & CTO"
+              title="CEO & CTO @ Braggi Solutions"
               avatar="/me.jpg"
             >
               <Flex>
-                <NavLink href='https://sushritpasupuleti.github.io/'>Profile</NavLink>
+                <NavLink href='https://sushritpasupuleti.github.io/'>View Profile</NavLink>
               </Flex>
             </Contributor>
           </Flex>
