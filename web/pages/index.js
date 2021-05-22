@@ -51,6 +51,9 @@ export default function Home() {
           <Feature icon="🤔" description="Ask doubts, answers doubts, get noticed, brag!">
             Forums
           </Feature>
+          <Feature icon="💼" description="Find jobs, create jobs, get the job done!">
+            Jobs
+          </Feature>
           <Feature icon="🔮" description="And many more...">
             ???
           </Feature>
