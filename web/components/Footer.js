@@ -32,6 +32,8 @@ import { usePoofSocialLinkStyles } from '@mui-treasury/styles/socialLink/poof';
 import { useReadyEmailSubscribeStyles } from '@mui-treasury/styles/emailSubscribe/ready';
 import { usePlainNavigationMenuStyles } from '@mui-treasury/styles/navigationMenu/plain';
 import Button from '@material-ui/core/Button';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import next from 'next';
 
 const darkTheme = createMuiTheme({ palette: { type: 'dark' } });
 
@@ -117,7 +119,7 @@ export default function Footer(props) {
                             </Typography>
                         </Item>
                         <Item>
-                            <Button variant="contained" color="primary">Notify Me</Button>
+                            <Button variant="contained" color="primary" endIcon={<NavigateNextIcon/>}>Notify Me</Button>
                         </Item>
                     </ColumnToRow>
                 </ThemeProvider>
