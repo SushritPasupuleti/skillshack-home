@@ -219,10 +219,9 @@ export default function Footer(props) {
                                 </CategoryTitle>
                             </CategoryProvider>
                             <SocialProvider useStyles={usePoofSocialLinkStyles}>
-                                <SocialLink brand={'Envelope'} />
-                                <SocialLink brand={'GooglePlus'} />
-                                <SocialLink brand={'Pinterest'} />
-                                <SocialLink brand={'Dribbble'} />
+                                <SocialLink brand={'Twitter'} />
+                                <SocialLink brand={'Instagram'} />
+                                <SocialLink brand={'GithubCircle'}/>
                             </SocialProvider>
                         </Grid>
                     </Grid>
