@@ -5,9 +5,9 @@ import Typography from '@material-ui/core/Typography'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import HeaderImage from '../components/HeaderImage'
-import { Provider, Heading, Subhead } from 'rebass'
+import { Provider, Heading, Subhead, NavLink, Relative, Absolute } from 'rebass'
 import {
-  Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Relative, Absolute, NavLink, Checklist
+  Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist
 } from 'react-landing-page'
 
 export default function Home() {
@@ -15,6 +15,15 @@ export default function Home() {
     <div className={styles.app}>
       {/* <NavBar /> */}
       <div className={styles.appBody}>
+        <Relative pb={5}>
+          <Absolute zIndex={1} left={0} right={0} top={0}>
+            <Flex is="header" p={3}>
+              <NavLink href="/" fontSize={3}>skillShack(⚡);</NavLink>
+              {/* <NavLink href="#" ml='auto'>Link 1</NavLink>
+              <NavLink href="#">Link 2</NavLink> */}
+            </Flex>
+          </Absolute>
+        </Relative>
         <Hero
           color="white"
           bg="black"
@@ -51,6 +60,12 @@ export default function Home() {
             'Grow',
           ]} />
         </Section>
+        <Flex is="footer" alignItems="center" p={3}>
+          <NavLink children="Instagram" href="#" />
+          <NavLink children="Twitter" href="#" />
+          <NavLink children="YouTube" href="#" />
+          {/* <Small color="grey" ml="auto">© skillShack(⚡);, 2021</Small> */}
+        </Flex>
       </div>
       {/* <Footer /> */}
     </div>
