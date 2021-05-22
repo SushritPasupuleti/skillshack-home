@@ -24,7 +24,7 @@ export default function Home() {
           {/* <HeaderImage/> */}
         <Typography variant="body2" color="initial">Coming Soon...</Typography>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
