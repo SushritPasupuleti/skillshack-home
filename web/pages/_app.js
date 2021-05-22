@@ -20,16 +20,16 @@ function MyApp({ Component, pageProps }) {
   const themeConfig = isDark ? themes.darkTheme : themes.lightTheme;
 
   return (
-        <ThemeProvider theme={themeConfig}>
-              <Head>
-                <meta
-                  name="viewport"
-                  content="width=device-width, initial-scale=1, user-scalable=no, user-scalable=0"
-                />
-              </Head>
-              <CssBaseline />
-              <Component {...pageProps} />
-        </ThemeProvider>
+    <ThemeProvider theme={themeConfig}>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, user-scalable=0"
+        />
+      </Head>
+      <CssBaseline />
+      <Component {...pageProps} />
+    </ThemeProvider>
   )
 }
 
