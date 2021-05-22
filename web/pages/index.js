@@ -52,7 +52,7 @@ export default function Home() {
             Forums
           </Feature>
           <Feature icon="💼" description="Find jobs, create jobs, get the job done!">
-            Jobs
+            Jobs/Internships
           </Feature>
           <Feature icon="🔮" description="And many more...">
             ???
