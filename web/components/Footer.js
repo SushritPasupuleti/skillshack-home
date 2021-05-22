@@ -112,7 +112,7 @@ export default function Footer(props) {
                     >
                         <Item>
                             <Typography className={classes.newsletterText}>
-                                <p>Subscribe to our quarterly newsletter</p>
+                                <a>Subscribe to our quarterly newsletter</a>
                             </Typography>
                         </Item>
                         <Item>
@@ -143,15 +143,15 @@ export default function Footer(props) {
                                 borderRadius={12}
                             />
                             <Typography className={classes.info}>
-                                <p index={1}>
+                                <a index={1}>
                                     skillShack by Braggi Solutions
-                  </p>
+                  </a>
                             </Typography>
 
                             <Typography className={classes.info}>
-                                <p index={1}>
+                                <a index={1}>
                                     info.braggi@gmail.com
-                  </p>
+                  </a>
                             </Typography>
                         </Grid>
                         <Grid item xs={12} md={8} lg={6}>
@@ -159,54 +159,54 @@ export default function Footer(props) {
                                 {/* <Grid item xs={6} sm={4}>
                                     <CategoryProvider useStyles={useMagCategoryMenuStyles}>
                                         <CategoryTitle>
-                                            <p>Products</p>
+                                            <a>Products</a>
                                         </CategoryTitle>
                                         <CategoryItem>
-                                            <p index={1}>Snowflake Free</p>
+                                            <a index={1}>Snowflake Free</a>
                                         </CategoryItem>
                                         <CategoryItem>
-                                            <p index={1}>Coloristic</p>
+                                            <a index={1}>Coloristic</a>
                                         </CategoryItem>
                                         <CategoryItem>
-                                            <p index={1}>Summer free</p>
+                                            <a index={1}>Summer free</a>
                                         </CategoryItem>
                                         <CategoryItem>
-                                            <p index={1}>Lucky store</p>
+                                            <a index={1}>Lucky store</a>
                                         </CategoryItem>
                                     </CategoryProvider>
                                 </Grid>
                                 <Grid item xs={6} sm={4}>
                                     <CategoryProvider useStyles={useMagCategoryMenuStyles}>
                                         <CategoryTitle>
-                                            <p>Information</p>
+                                            <a>Information</a>
                                         </CategoryTitle>
                                         <CategoryItem>
-                                            <p index={1}>License</p>
+                                            <a index={1}>License</a>
                                         </CategoryItem>
                                         <CategoryItem>
-                                            <p index={1}>Privacy Policy</p>
+                                            <a index={1}>Privacy Policy</a>
                                         </CategoryItem>
                                         <CategoryItem>
-                                            <p index={1}>Releases</p>
+                                            <a index={1}>Releases</a>
                                         </CategoryItem>
                                         <CategoryItem>
-                                            <p index={1}>FAQ</p>
+                                            <a index={1}>FAQ</a>
                                         </CategoryItem>
                                     </CategoryProvider>
                                 </Grid>
                                 <Grid item xs={6} sm={4}>
                                     <CategoryProvider useStyles={useMagCategoryMenuStyles}>
                                         <CategoryTitle>
-                                            <p>About</p>
+                                            <a>About</a>
                                         </CategoryTitle>
                                         <CategoryItem>
-                                            <p index={1}>Contact</p>
+                                            <a index={1}>Contact</a>
                                         </CategoryItem>
                                         <CategoryItem>
-                                            <p index={1}>Team</p>
+                                            <a index={1}>Team</a>
                                         </CategoryItem>
                                         <CategoryItem>
-                                            <p index={1}>Support</p>
+                                            <a index={1}>Support</a>
                                         </CategoryItem>
                                     </CategoryProvider>
                                 </Grid> */}
@@ -215,7 +215,7 @@ export default function Footer(props) {
                         <Grid item xs={12} md={8} lg={3} style={{ marginLeft: 'auto' }}>
                             <CategoryProvider useStyles={useMagCategoryMenuStyles}>
                                 <CategoryTitle>
-                                    <p>Subscribe</p>
+                                    <a>Subscribe</a>
                                 </CategoryTitle>
                             </CategoryProvider>
                             <SocialProvider useStyles={usePoofSocialLinkStyles}>
@@ -241,13 +241,13 @@ export default function Footer(props) {
                             {/* <NavMenu useStyles={usePlainNavigationMenuStyles}>
                                 <ColumnToRow at={'sm'}>
                                     <NavItem className={classes.legalLink}>
-                                        <p>Terms & Conditions</p>
+                                        <a>Terms & Conditions</a>
                                     </NavItem>
                                     <NavItem className={classes.legalLink}>
-                                        <p>Privacy Policy</p>
+                                        <a>Privacy Policy</a>
                                     </NavItem>
                                     <NavItem className={classes.legalLink}>
-                                        <p>Sitemap</p>
+                                        <a>Sitemap</a>
                                     </NavItem>
                                 </ColumnToRow>
                             </NavMenu> */}
@@ -259,10 +259,10 @@ export default function Footer(props) {
                                     variant={'caption'}
                                     color={'textSecondary'}
                                 >
-                                    <p index={1}>
+                                    <a index={1}>
                                         Designed by Braggi Solutions 2021 All right
                                         reserved
-                    </p>
+                    </a>
                                 </Typography>
                             </Box>
                         </Item>
