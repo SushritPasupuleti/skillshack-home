@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import HeaderImage from '../components/HeaderImage'
 import { Provider, Heading, Subhead } from 'rebass'
 import {
-  Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section
+  Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Relative, Absolute, NavLink
 } from 'react-landing-page'
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         <Hero
           color="white"
           bg="black"
-          // backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
+        // backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
         >
           <Heading>skillShack(⚡);</Heading>
           <Subhead>The Next-Generation Social Network for Software Professionals.</Subhead>
