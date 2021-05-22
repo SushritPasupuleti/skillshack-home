@@ -20,8 +20,8 @@ export default function Home() {
           bg="white"
           backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
         >
-          <Heading>Name of your app</Heading>
-          <Subhead>a couple more words</Subhead>
+          <Heading>skillShack(⚡);</Heading>
+          <Subhead>The Next-Generation Social Network for Software Professionals.</Subhead>
           <CallToAction href="/getting-started" mt={3}>Get Started</CallToAction>
           <ScrollDownIndicator />
         </Hero>
