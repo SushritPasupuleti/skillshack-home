@@ -23,7 +23,7 @@ export default function Home() {
             width={500}
             height={500}></Image>
           {/* <HeaderImage/> */}
-          <Typography variant="body2" color="initial">Coming Soon...</Typography>
+          {/* <Typography variant="body2" color="initial">COMING SOON</Typography> */}
         </div>
       </div>
       {/* <Footer/> */}
