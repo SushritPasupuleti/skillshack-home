@@ -62,6 +62,9 @@ export default function Home() {
             'Discuss',
             'Grow',
           ]} />
+          <CallToAction
+            // href='/getting-started'
+          >Get Notified!</CallToAction>
         </Section>
         <Flex is="footer" alignItems="center" p={3}>
           <NavLink children="Instagram" href="#" />
