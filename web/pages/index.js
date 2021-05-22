@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import HeaderImage from '../components/HeaderImage'
 import { Provider, Heading, Subhead } from 'rebass'
 import {
-  Hero, CallToAction, ScrollDownIndicator
+  Hero, CallToAction, ScrollDownIndicator, Flex, Feature
 } from 'react-landing-page'
 
 export default function Home() {
@@ -25,6 +25,18 @@ export default function Home() {
           <CallToAction href="/getting-started" mt={3}>Get Started</CallToAction>
           <ScrollDownIndicator />
         </Hero>
+        <Heading textAlign="center">What is inside?</Heading>
+        <Flex flexWrap="wrap" justifyContent="center">
+          <Feature icon="👋" description="What your users see first">
+            Hero
+    </Feature>
+          <Feature icon="🔥" description="What your app can do">
+            Features
+    </Feature>
+          <Feature icon="📩" description="How to keep in touch">
+            Sign Up
+    </Feature>
+        </Flex>
       </div>
       {/* <Footer /> */}
     </div>
