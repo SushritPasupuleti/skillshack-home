@@ -17,6 +17,7 @@ export default function Home() {
         <title>skillShack</title>
         <link rel="icon" href="/applogox64.ico" />
         <meta property="og:image" content="/letterLogoClippedColored.png"/>
+        <meta property="og:title" content="skillShack(⚡);"/>
       </Head>
       <div className={styles.app}>
         {/* <NavBar /> */}
@@ -81,7 +82,7 @@ export default function Home() {
             >Get Notified!</CallToAction>
           </Section>
           <Section
-            style={{ marginTop: '-6rem' }}
+            // style={{ marginTop: '-6rem' }}
             bg='black'
             color="white">
             <Heading textAlign="center">Made by</Heading>
