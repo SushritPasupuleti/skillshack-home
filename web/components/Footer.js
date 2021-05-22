@@ -96,7 +96,7 @@ export default function Footer(props) {
                 <div className={classes.overlay}>
                     <img
                         src={
-                            'https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80'
+                            'https://images.unsplash.com/photo-1547954575-855750c57bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
                         }
                         alt={''}
                     />
@@ -112,7 +112,7 @@ export default function Footer(props) {
                     >
                         <Item>
                             <Typography className={classes.newsletterText}>
-                                <a>Subscribe to our quarterly newsletter</a>
+                                <a>Notify Me</a>
                             </Typography>
                         </Item>
                         <Item>
