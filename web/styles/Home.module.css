@@ -121,12 +121,12 @@
 }
 
 .appBody {
-  background: rgb(109, 34, 200);
+  background: rgb(52, 13, 100);
   background: linear-gradient(
     0deg,
-    rgba(109, 34, 200, 1) 0%,
-    rgba(109, 34, 200, 0.6) 50%,
-    rgba(109, 34, 200, 0.4) 100%
+    rgb(52, 13, 100) 0%,
+    rgba(52, 13, 100, 0.6) 50%,
+    rgba(52, 13, 100, 0.4) 100%
   );
 }
 
