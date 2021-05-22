@@ -54,8 +54,7 @@ export default function Home() {
             width={500}
             height={500}></Image> */}
             <CallToAction
-              // href="/getting-started"
-              mt={3}>Coming Soon</CallToAction>
+              mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon</a></CallToAction>
             <ScrollDownIndicator />
           </Hero>
           <Heading color="white" textAlign="center">What's inside?</Heading>
@@ -89,8 +88,7 @@ export default function Home() {
               'Grow',
             ]} />
             <CallToAction
-            // href='/getting-started'
-            >Get Notified!</CallToAction>
+            ><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Get Notified!</a></CallToAction>
           </Section>
           <Section
             // style={{ marginTop: '-6rem' }}
