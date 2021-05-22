@@ -9,6 +9,7 @@ import { Provider, Heading, Subhead, NavLink, Relative, Absolute, Small } from '
 import {
   Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist, Contributor
 } from 'react-landing-page'
+import Button from '@material-ui/core/Button';
 
 export default function Home() {
   return (
@@ -106,7 +107,8 @@ export default function Home() {
                 avatar="/me.jpg"
               >
                 <Flex>
-                  <NavLink href='https://sushritpasupuleti.github.io/'>View Profile</NavLink>
+                  <Button variant="outlined" href='https://sushritpasupuleti.github.io/' color="primary">View Profile</Button>
+                  {/* <NavLink href='https://sushritpasupuleti.github.io/'>View Profile</NavLink> */}
                 </Flex>
               </Contributor>
             </Flex>
