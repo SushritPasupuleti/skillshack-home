@@ -15,7 +15,7 @@ export default function Home() {
     <div className={styles.app}>
       {/* <NavBar /> */}
       <div className={styles.appBody}>
-        <Relative pb={5}>
+        <Relative pb={5} color="white">
           <Absolute zIndex={1} left={0} right={0} top={0}>
             <Flex is="header" p={3}>
               <NavLink href="/" fontSize={3}>skillShack(⚡);</NavLink>
@@ -40,8 +40,8 @@ export default function Home() {
             mt={3}>Coming Soon</CallToAction>
           <ScrollDownIndicator />
         </Hero>
-        <Heading textAlign="center">What's inside?</Heading>
-        <Flex flexWrap="wrap" justifyContent="center">
+        <Heading color="white" textAlign="center">What's inside?</Heading>
+        <Flex color="white" flexWrap="wrap" justifyContent="center">
           <Feature icon="💡" description="Share Ideas">
             Blogs, Videos, Podcasts
           </Feature>
@@ -57,6 +57,7 @@ export default function Home() {
         </Flex>
         <Section
           bg='black'
+          color="white"
           heading="What no Social Network has done before for Professionals"
           subhead="Gamify learning!">
           {/* Learn while you scroll through feeds endlessly. */}
@@ -70,7 +71,7 @@ export default function Home() {
           // href='/getting-started'
           >Get Notified!</CallToAction>
         </Section>
-        <Flex is="footer" alignItems="center" p={3}>
+        <Flex color="white" is="footer" alignItems="center" p={3}>
           <NavLink children="Instagram" href="#" />
           <NavLink children="Twitter" href="#" />
           <NavLink children="YouTube" href="#" />
