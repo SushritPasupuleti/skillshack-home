@@ -156,7 +156,7 @@ export default function Footer(props) {
                         </Grid>
                         <Grid item xs={12} md={8} lg={6}>
                             <Grid container spacing={2}>
-                                <Grid item xs={6} sm={4}>
+                                {/* <Grid item xs={6} sm={4}>
                                     <CategoryProvider useStyles={useMagCategoryMenuStyles}>
                                         <CategoryTitle>
                                             <p>Products</p>
@@ -209,7 +209,7 @@ export default function Footer(props) {
                                             <p index={1}>Support</p>
                                         </CategoryItem>
                                     </CategoryProvider>
-                                </Grid>
+                                </Grid> */}
                             </Grid>
                         </Grid>
                         <Grid item xs={12} md={8} lg={3} style={{ marginLeft: 'auto' }}>
@@ -239,7 +239,7 @@ export default function Footer(props) {
                         rowStyle={{ alignItems: 'unset' }}
                     >
                         <Item grow ml={-2} shrink={0}>
-                            <NavMenu useStyles={usePlainNavigationMenuStyles}>
+                            {/* <NavMenu useStyles={usePlainNavigationMenuStyles}>
                                 <ColumnToRow at={'sm'}>
                                     <NavItem className={classes.legalLink}>
                                         <p>Terms & Conditions</p>
@@ -251,7 +251,7 @@ export default function Footer(props) {
                                         <p>Sitemap</p>
                                     </NavItem>
                                 </ColumnToRow>
-                            </NavMenu>
+                            </NavMenu> */}
                         </Item>
                         <Item>
                             <Box py={1} textAlign={{ xs: 'center', md: 'right' }}>
@@ -261,7 +261,7 @@ export default function Footer(props) {
                                     color={'textSecondary'}
                                 >
                                     <p index={1}>
-                                        Designed by Anonymous © Fake Studio 2020 All right
+                                        Designed by Braggi Solutions 2021 All right
                                         reserved
                     </p>
                                 </Typography>
