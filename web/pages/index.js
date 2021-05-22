@@ -13,7 +13,7 @@ import {
 export default function Home() {
   return (
     <div className={styles.app}>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className={styles.appBody}>
         <Hero
           color="white"
@@ -27,7 +27,7 @@ export default function Home() {
             mt={3}>Coming Soon</CallToAction>
           <ScrollDownIndicator />
         </Hero>
-        <Heading textAlign="center">What is inside?</Heading>
+        <Heading textAlign="center">What's inside?</Heading>
         <Flex flexWrap="wrap" justifyContent="center">
           <Feature icon="💡" description="Share Ideas">
             Blogs, Videos, Podcasts
@@ -41,9 +41,9 @@ export default function Home() {
         </Flex>
         <Section
           bg='black'
-          heading="Heading"
-          subhead="Subhead">
-          Content
+          heading="What no Social Network has done before"
+          subhead="You can do it now!">
+          Learn while you scroll through feeds endlessly.
         </Section>
       </div>
       {/* <Footer /> */}
