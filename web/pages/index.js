@@ -8,7 +8,7 @@ import HeaderImage from '../components/HeaderImage'
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.app}>
       <NavBar />
       <div className={styles.container}>
         <Head>
@@ -25,6 +25,6 @@ export default function Home() {
         <Typography variant="body2" color="initial">Coming Soon...</Typography>
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }
