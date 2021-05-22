@@ -31,6 +31,7 @@ import { useMagCategoryMenuStyles } from '@mui-treasury/styles/categoryMenu/mag'
 import { usePoofSocialLinkStyles } from '@mui-treasury/styles/socialLink/poof';
 import { useReadyEmailSubscribeStyles } from '@mui-treasury/styles/emailSubscribe/ready';
 import { usePlainNavigationMenuStyles } from '@mui-treasury/styles/navigationMenu/plain';
+import Button from '@material-ui/core/Button';
 
 const darkTheme = createMuiTheme({ palette: { type: 'dark' } });
 
@@ -48,7 +49,7 @@ const useStyles = makeStyles(({ palette, typography }) => ({
     },
     newsletterText: {
         color: '#fff',
-        pSize: '0.875rem',
+        // pSize: '0.875rem',
         textTransform: 'uppercase',
     },
     form: {
@@ -112,19 +113,11 @@ export default function Footer(props) {
                     >
                         <Item>
                             <Typography className={classes.newsletterText}>
-                                <a>Notify Me</a>
+                                <a>Get Subscribed for Updates</a>
                             </Typography>
                         </Item>
                         <Item>
-                            <EmailSubscribe
-                                className={classes.form}
-                                onSubmit={email => alert(`Your email is ${email}.`)}
-                                useStyles={useReadyEmailSubscribeStyles}
-                                inputClearedAfterSubmit
-                            >
-                                <EmailTextInput placeholder="Enter your email" />
-                                <SubmitButton>Subscribe</SubmitButton>
-                            </EmailSubscribe>
+                            <Button variant="contained" color="primary">Notify Me</Button>
                         </Item>
                     </ColumnToRow>
                 </ThemeProvider>
