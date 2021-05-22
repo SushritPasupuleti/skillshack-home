@@ -2,7 +2,7 @@ import React from 'react';
 import CardMedia from '@material-ui/core/CardMedia';
 import { useSlopeCardMediaStyles } from '@mui-treasury/styles/cardMedia/slope';
 
-const SlopeCardMedia = () => {
+const HeaderImage = () => {
     const slopeStyles = useSlopeCardMediaStyles();
     return (
         <CardMedia
@@ -13,8 +13,8 @@ const SlopeCardMedia = () => {
     );
 };
 
-SlopeCardMedia.propTypes = {};
-SlopeCardMedia.defaultProps = {};
+HeaderImage.propTypes = {};
+HeaderImage.defaultProps = {};
 
 
-export default SlopeCardMedia;
+export default HeaderImage;
