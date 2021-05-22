@@ -18,6 +18,7 @@ export default function Home() {
         <link rel="icon" href="/applogox64.ico" />
         <meta property="og:image" content="https://www.skillshack.dev/logoClipped.png"/>
         <meta property="og:title" content="skillShack(⚡);"/>
+        <meta property="og:descritpion" content="The Next-Generation Social Network for Software Professionals. Coming soon to a device near you!"/>
       </Head>
       <div className={styles.app}>
         {/* <NavBar /> */}
