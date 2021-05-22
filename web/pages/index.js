@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Typography from '@material-ui/core/Typography'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           height={500}></Image>
         <Typography variant="body2" color="initial">Coming Soon...</Typography>
       </div>
+      <Footer/>
     </>
   )
 }
