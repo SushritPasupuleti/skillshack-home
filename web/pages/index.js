@@ -31,10 +31,10 @@ export default function Home() {
         >
           <Heading>skillShack(⚡);</Heading>
           <Subhead style={{ textAlign: 'center' }}>The Next-Generation Social Network for Software Professionals.</Subhead>
-          <Image
+          {/* <Image
             src="/undraw_career_progress_ivdb.svg"
             width={500}
-            height={500}></Image>
+            height={500}></Image> */}
           <CallToAction
             // href="/getting-started"
             mt={3}>Coming Soon</CallToAction>
