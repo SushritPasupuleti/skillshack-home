@@ -31,6 +31,10 @@ export default function Home() {
         >
           <Heading>skillShack(⚡);</Heading>
           <Subhead style={{ textAlign: 'center' }}>The Next-Generation Social Network for Software Professionals.</Subhead>
+          <Image
+            src="/undraw_career_progress_ivdb.svg"
+            width={500}
+            height={500}></Image>
           <CallToAction
             // href="/getting-started"
             mt={3}>Coming Soon</CallToAction>
@@ -63,7 +67,7 @@ export default function Home() {
             'Grow',
           ]} />
           <CallToAction
-            // href='/getting-started'
+          // href='/getting-started'
           >Get Notified!</CallToAction>
         </Section>
         <Flex is="footer" alignItems="center" p={3}>
