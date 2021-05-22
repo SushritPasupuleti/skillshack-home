@@ -11,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/applogox64.ico" />
       </Head>
       <Typography variant="h2" color="initial">skillShack(⚡);</Typography>
+      <Typography variant="body2" color="initial">The Next-Generation Social Network for Software Professionals.</Typography>
     </div>
   )
 }
