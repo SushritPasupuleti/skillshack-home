@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import HeaderImage from '../components/HeaderImage'
-import { Provider, Heading, Subhead, NavLink, Relative, Absolute } from 'rebass'
+import { Provider, Heading, Subhead, NavLink, Relative, Absolute, Small } from 'rebass'
 import {
   Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist
 } from 'react-landing-page'
@@ -64,7 +64,7 @@ export default function Home() {
           <NavLink children="Instagram" href="#" />
           <NavLink children="Twitter" href="#" />
           <NavLink children="YouTube" href="#" />
-          {/* <Small color="grey" ml="auto">© skillShack(⚡);, 2021</Small> */}
+          <Small ml="auto">© skillShack(⚡); 2021</Small>
         </Flex>
       </div>
       {/* <Footer /> */}
