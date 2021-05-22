@@ -136,21 +136,21 @@ export default function Footer(props) {
                             <Box
                                 component={'img'}
                                 mt={-3}
-                                width={120}
-                                height={64}
-                                src="https://cdn.dribbble.com/users/1007527/screenshots/2992564/arc-logo.png"
+                                width={200}
+                                height={55}
+                                src="/letterLogoClippedColored.png"
                                 alt=""
                                 borderRadius={12}
                             />
                             <Typography className={classes.info}>
                                 <p index={1}>
-                                    Architect VR, 830-1183 BKK Thailand 10220
+                                    skillShack by Braggi Solutions
                   </p>
                             </Typography>
 
                             <Typography className={classes.info}>
                                 <p index={1}>
-                                    admin@arc.fake
+                                    info.braggi@gmail.com
                   </p>
                             </Typography>
                         </Grid>
