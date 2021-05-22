@@ -120,7 +120,7 @@
   }
 }
 
-.app {
+.appBody {
   background: rgb(49, 49, 177);
   background: linear-gradient(
     0deg,
@@ -130,8 +130,8 @@
   );
 }
 
-.appBody {
-  background-image: url(https://images.unsplash.com/photo-1508389377389-b8221c0bcc9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+.app {
+  background-image: url(https://images.unsplash.com/photo-1547954575-855750c57bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
   background-position: top top;
   background-size: cover;
 }
