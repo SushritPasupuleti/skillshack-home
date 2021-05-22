@@ -107,7 +107,7 @@ export default function Home() {
                 avatar="/me.jpg"
               >
                 <Flex>
-                  <Button variant="outlined" href='https://sushritpasupuleti.github.io/' color="primary">View Profile</Button>
+                  <Button style={{color: 'limegreen'}} variant="outlined" href='https://sushritpasupuleti.github.io/'>View Profile</Button>
                   {/* <NavLink href='https://sushritpasupuleti.github.io/'>View Profile</NavLink> */}
                 </Flex>
               </Contributor>
