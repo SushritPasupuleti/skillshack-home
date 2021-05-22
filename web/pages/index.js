@@ -33,7 +33,7 @@ export default function Home() {
             Blogs, Videos, Podcasts
           </Feature>
           <Feature icon="🔥" description="Stay upto date with the newest technologies and trends">
-            Feed
+            Curated Feed
           </Feature>
           <Feature icon="🤔" description="Ask doubts, answers doubts, get noticed, brag!">
             Forums
