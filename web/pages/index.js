@@ -52,7 +52,7 @@ export default function Home() {
             <Feature icon="💡" description="Share Ideas">
               Blogs, Videos, Podcasts
           </Feature>
-            <Feature icon="🔥" description="Stay upto date with the newest technologies and trends">
+            <Feature icon="✨" description="Stay upto date with the newest technologies and trends">
               Curated Feed
           </Feature>
             <Feature icon="🤔" description="Ask doubts, answers doubts, get noticed, brag!">
