@@ -10,6 +10,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
+    "@mui-treasury/components": "^1.10.1",
     "highlight.js": "^10.7.2",
     "isomorphic-dompurify": "^0.13.0",
     "markdown-it": "^12.0.6",
