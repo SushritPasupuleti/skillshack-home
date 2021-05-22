@@ -5,28 +5,28 @@ import Typography from '@material-ui/core/Typography'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import HeaderImage from '../components/HeaderImage'
+import { Provider, Heading, Subhead } from 'rebass'
+import {
+  Hero, CallToAction, ScrollDownIndicator
+} from 'react-landing-page'
 
 export default function Home() {
   return (
     <div className={styles.app}>
       <NavBar />
       <div className={styles.appBody}>
-        <div className={styles.container}>
-          <Head>
-            <title>skillShack</title>
-            <link rel="icon" href="/applogox64.ico" />
-          </Head>
-          <Typography variant="h2" color="initial">skillShack(⚡);</Typography>
-          <Typography variant="body2" color="initial" align="center">The Next-Generation Social Network for Software Professionals.</Typography>
-          <Image
-            src="/undraw_career_progress_ivdb.svg"
-            width={500}
-            height={500}></Image>
-          {/* <HeaderImage/> */}
-          <Typography variant="body2" color="initial">Coming Soon...</Typography>
-        </div>
+        <Hero
+          color="black"
+          bg="white"
+          backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
+        >
+          <Heading>Name of your app</Heading>
+          <Subhead>a couple more words</Subhead>
+          <CallToAction href="/getting-started" mt={3}>Get Started</CallToAction>
+          <ScrollDownIndicator />
+        </Hero>
       </div>
-      <Footer/>
+      {/* <Footer /> */}
     </div>
   )
 }
