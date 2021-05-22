@@ -21,7 +21,7 @@ export default function Home() {
         // backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
         >
           <Heading>skillShack(⚡);</Heading>
-          <Subhead>The Next-Generation Social Network for Software Professionals.</Subhead>
+          <Subhead style={{textAlign: 'center'}}>The Next-Generation Social Network for Software Professionals.</Subhead>
           <CallToAction
             // href="/getting-started"
             mt={3}>Coming Soon</CallToAction>
