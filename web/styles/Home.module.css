@@ -119,3 +119,13 @@
     flex-direction: column;
   }
 }
+
+.app {
+  background: rgb(49, 49, 177);
+  background: linear-gradient(
+    0deg,
+    rgba(49, 49, 177, 1) 0%,
+    rgba(49, 49, 177, 1) 50%,
+    rgba(49, 49, 177, 0.6) 100%
+  );
+}
