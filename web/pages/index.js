@@ -17,11 +17,11 @@ export default function Home() {
         </Head>
         <Typography variant="h2" color="initial">skillShack(⚡);</Typography>
         <Typography variant="body2" color="initial">The Next-Generation Social Network for Software Professionals.</Typography>
-        {/* <Image
+        <Image
           src="/undraw_career_progress_ivdb.svg"
           width={500}
-          height={500}></Image> */}
-          <HeaderImage/>
+          height={500}></Image>
+          {/* <HeaderImage/> */}
         <Typography variant="body2" color="initial">Coming Soon...</Typography>
       </div>
       <Footer/>
