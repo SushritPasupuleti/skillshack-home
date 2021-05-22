@@ -110,9 +110,9 @@ export default function Home() {
             </Flex>
           </Section>
           <Flex color="white" is="footer" alignItems="center" p={3}>
-            <NavLink children="Instagram" href="#" />
-            <NavLink children="Twitter" href="#" />
-            <NavLink children="YouTube" href="#" />
+            <NavLink children="Instagram" href="https://www.instagram.com/braggi_solutions/" />
+            <NavLink children="Twitter" href="https://twitter.com/Sushrit_Lawliet" />
+            <NavLink children="YouTube" href="https://www.youtube.com/channel/UCUDlGMaGAQctgQJTRoBHgAw" />
             <Small ml="auto">© skillShack(⚡); 2021</Small>
           </Flex>
         </div>
