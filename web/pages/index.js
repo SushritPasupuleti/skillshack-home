@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import HeaderImage from '../components/HeaderImage'
 import { Provider, Heading, Subhead } from 'rebass'
 import {
-  Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Relative, Absolute, NavLink
+  Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Relative, Absolute, NavLink, Checklist
 } from 'react-landing-page'
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         // backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
         >
           <Heading>skillShack(⚡);</Heading>
-          <Subhead style={{textAlign: 'center'}}>The Next-Generation Social Network for Software Professionals.</Subhead>
+          <Subhead style={{ textAlign: 'center' }}>The Next-Generation Social Network for Software Professionals.</Subhead>
           <CallToAction
             // href="/getting-started"
             mt={3}>Coming Soon</CallToAction>
@@ -44,6 +44,12 @@ export default function Home() {
           heading="What no Social Network has done before for Professionals"
           subhead="Gamify learning!">
           {/* Learn while you scroll through feeds endlessly. */}
+          <Checklist children={[
+            'Create',
+            'Share',
+            'Discuss',
+            'Grow',
+          ]} />
         </Section>
       </div>
       {/* <Footer /> */}
