@@ -29,14 +29,14 @@ export default function Home() {
         </Hero>
         <Heading textAlign="center">What is inside?</Heading>
         <Flex flexWrap="wrap" justifyContent="center">
-          <Feature icon="👋" description="What your users see first">
-            Hero
+          <Feature icon="💡" description="Share Ideas">
+            Blogs, Videos, Podcasts
           </Feature>
-          <Feature icon="🔥" description="What your app can do">
-            Features
+          <Feature icon="🔥" description="Stay upto date with the newest technologies and trends">
+            Feed
           </Feature>
-          <Feature icon="📩" description="How to keep in touch">
-            Sign Up
+          <Feature icon="🤔" description="Ask doubts, answers doubts, get noticed, brag!">
+            Forums
           </Feature>
         </Flex>
         <Section
