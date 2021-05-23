@@ -54,7 +54,7 @@ export default function Home() {
             width={500}
             height={500}></Image> */}
             <CallToAction
-              mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon</a></CallToAction>
+              mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon! Get Nofified</a></CallToAction>
             <ScrollDownIndicator />
           </Hero>
           <Heading color="white" textAlign="center">What's inside?</Heading>
