@@ -100,7 +100,7 @@ export default function Home() {
               <Contributor
                 fullName="Sushrit Pasupuleti"
                 title="CEO & CTO @ Braggi Solutions"
-                avatar="/me-cropped.jpg"
+                avatar="/me.jpg"
               >
                 <Flex>
                   <Button style={{ color: 'limegreen' }} variant="outlined" href='https://sushritpasupuleti.github.io/'>View Profile</Button>
