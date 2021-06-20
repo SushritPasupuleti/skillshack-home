@@ -94,7 +94,7 @@ export default function Home() {
             // style={{ marginTop: '-6rem' }}
             bg='black'
             color="white">
-            <Heading textAlign="center">Made by</Heading>
+            <Heading textAlign="center">Our Team</Heading>
             <br />
             <Flex justifyContent="space-around">
               <Contributor
@@ -104,7 +104,15 @@ export default function Home() {
               >
                 <Flex>
                   <Button style={{ color: 'limegreen' }} variant="outlined" href='https://sushritpasupuleti.github.io/'>View Profile</Button>
-                  {/* <NavLink href='https://sushritpasupuleti.github.io/'>View Profile</NavLink> */}
+                </Flex>
+              </Contributor>
+              <Contributor
+                fullName="Vamsi Krishna Narra"
+                title="Head of Marketing and Design"
+                avatar="obama.jpg"
+              >
+                <Flex>
+                  <Button style={{ color: 'limegreen' }} variant="outlined" href='https://www.instagram.com/vamsi_28_/'>View Profile</Button>
                 </Flex>
               </Contributor>
             </Flex>
