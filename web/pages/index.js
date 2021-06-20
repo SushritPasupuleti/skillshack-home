@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import HeaderImage from '../components/HeaderImage'
-import { Provider, Heading, Subhead, NavLink, Relative, Absolute, Small } from 'rebass'
+import { Provider, Heading, Subhead, NavLink, Relative, Absolute, Small, Pre } from 'rebass'
 import {
   Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist, Contributor
 } from 'react-landing-page'
@@ -61,19 +61,19 @@ export default function Home() {
           <Flex color="white" flexWrap="wrap" justifyContent="center">
             <Feature icon="💡" description="Share Ideas">
               Blogs, Videos, Podcasts
-          </Feature>
+            </Feature>
             <Feature icon="✨" description="Stay upto date with the newest technologies and trends">
               Curated Feed
-          </Feature>
+            </Feature>
             <Feature icon="🤔" description="Ask doubts, answers doubts, get noticed, brag!">
               Forums
-          </Feature>
+            </Feature>
             <Feature icon="💼" description="Find jobs, create jobs, get the job done!">
               Jobs/Internships
-          </Feature>
+            </Feature>
             <Feature icon="🔮" description="And many more...">
               ???
-          </Feature>
+            </Feature>
           </Flex>
           <Section
             bg='black'
@@ -103,15 +103,24 @@ export default function Home() {
                 avatar="/me.jpg"
               >
                 <Flex>
-                  <Button style={{color: 'limegreen'}} variant="outlined" href='https://sushritpasupuleti.github.io/'>View Profile</Button>
+                  <Button style={{ color: 'limegreen' }} variant="outlined" href='https://sushritpasupuleti.github.io/'>View Profile</Button>
                   {/* <NavLink href='https://sushritpasupuleti.github.io/'>View Profile</NavLink> */}
                 </Flex>
               </Contributor>
             </Flex>
           </Section>
+          <Section
+            heading='Join Us'
+            subhead='We are looking for people who share our passion for learning, building, and teaching. If this sounds like you, feel free to apply!'
+            width={1}
+            bg='darkslategrey'
+            color="white"
+          >
+            <CallToAction href='https://www.linkedin.com/company/skillshack-%E2%9A%A1/jobs/'>Browse Jobs</CallToAction>
+          </Section>
           <Flex color="white" is="footer" alignItems="center" p={3}>
             <NavLink children="Instagram" href="https://www.instagram.com/braggi_solutions/" />
-            <NavLink children="Twitter" href="https://twitter.com/Sushrit_Lawliet" />
+            <NavLink children="Twitter" href="https://twitter.com/skillShack_dev" />
             <NavLink children="YouTube" href="https://www.youtube.com/channel/UCUDlGMaGAQctgQJTRoBHgAw" />
             <Small ml="auto">© skillShack(⚡); 2021</Small>
           </Flex>
