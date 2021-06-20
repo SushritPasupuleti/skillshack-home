@@ -118,6 +118,7 @@ export default function Home() {
             </Flex>
           </Section>
           <Section
+            id="jobs"
             heading='Join Us'
             subhead='We are looking for people who share our passion for learning, building, and teaching. If this sounds like you, feel free to apply!'
             width={1}
