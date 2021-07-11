@@ -4,6 +4,7 @@ import Container from '../../components/Container';
 import Markdown from './../../components/Markdown';
 import Typography from '@material-ui/core/Typography';
 import CustomMarkdownRender from './../../components/CustomMarkdownRender';
+import { boxShadow } from 'styled-system';
 
 export default function Post(data) {
 
@@ -21,7 +22,7 @@ export default function Post(data) {
                     display: "flex",
                     justifyContent: "center",
                 }}>
-                    {post.featuredImage !== undefined ? (<img src={post.featuredImage.node.sourceUrl} />) : (<></>)}
+                    {post.featuredImage !== undefined ? (<img style={{width: '90%', marginBottom: '1rem', boxShadow: '0 5px 10px rgb(255 255 255 / 12%)'}} src={post.featuredImage.node.sourceUrl} />) : (<></>)}
                 </div>
                 {/* <article className="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article> */}
                 <CustomMarkdownRender className="article-data">{post.content}</CustomMarkdownRender>
