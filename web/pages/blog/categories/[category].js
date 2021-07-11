@@ -1,31 +1,23 @@
 import Link from 'next/link'
 import Post from '../../../components/Posts'
+import Typography from '@material-ui/core/Typography';
+import { useRouter } from 'next/router'
 
-export default function Home(data) {
+export default function Home(props) {
 
     // console.log("Context: ", context.params)
-    console.log("Posts: ", data.posts)
+    console.log("Props: ", props)
+    console.log("Posts: ", props.posts)
+    const router = useRouter()
 
     return (
-        // <ul>
-        //     <li>
-        //         <Link href="/">
-        //             <a>Home</a>
-        //         </Link>
-        //     </li>
-        //     <li>
-        //         <Link href="/about">
-        //             <a>About Us</a>
-        //         </Link>
-        //     </li>
-        //     <li>
-        //         <Link href="/blog/hello-world">
-        //             <a>Blog Post</a>
-        //         </Link>
-        //     </li>
-        // </ul>
-        <div>
-            {data.posts.nodes.map((post) => {
+        <div style={{ marginTop: '1rem' }}>
+            <div style={{ padding: '5%' }}>
+                <Typography variant="h1" component="h2" gutterBottom>
+                    {"Category: " + router.query.category}
+                </Typography>
+            </div>
+            {props.posts.nodes.map((post) => {
                 return (
                     <Post details={post}></Post>
                 )
