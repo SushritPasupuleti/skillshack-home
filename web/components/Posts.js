@@ -11,6 +11,7 @@ import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import Card from '@material-ui/core/Card';
 import readingTime from 'reading-time';
 import CardContent from '@material-ui/core/CardContent';
+import Link from 'next/link'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -31,7 +32,7 @@ export default function Posts(props) {
     const classes = useStyles();
     const [bookmarked, setBookmarked] = useState(false)
 
-    console.log("URL: ", props.details.featuredImage.node.sourceUrl)
+    console.log("URL: ", props.details.featuredImage.node.sourceUrl, props.details?.slug)
 
     const rtime = readingTime(props.details.content);
 
@@ -68,13 +69,15 @@ export default function Posts(props) {
             // }
             />
             <CardContent style={{ marginTop: '-1rem' }}>
-                <Typography gutterBottom variant="h2" component="h2">
-                    {props.details?.title}
-                </Typography>
+                <Link href={"/blog/"+props.details?.slug}>
+                    <Typography gutterBottom variant="h2" component="a">
+                        {props.details?.title}
+                    </Typography>
+                </Link>
                 <Typography variant="body2"
                     // color="textSecondary"
                     component="p">
-                    <p dangerouslySetInnerHTML={{ __html: props.details.excerpt }}></p>
+                    <div dangerouslySetInnerHTML={{ __html: props.details.excerpt }}></div>
                 </Typography>
             </CardContent>
 
