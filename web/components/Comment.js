@@ -83,7 +83,7 @@ function Comment(props) {
                     </div> */}
                 </LayoutLeftSideNav>
                 <LayoutThread>
-                    <MarkdownPreview input={comment.body} />
+                    <MarkdownPreview input={comment.content} />
                 </LayoutThread>
                 <LayoutBottom>
                     Bottom links
