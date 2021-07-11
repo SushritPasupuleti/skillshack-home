@@ -69,10 +69,12 @@ export default function Posts(props) {
             // }
             />
             <CardContent style={{ marginTop: '-1rem' }}>
-                <Link href={"/blog/"+props.details?.slug}>
-                    <Typography gutterBottom variant="h2" component="a">
-                        {props.details?.title}
-                    </Typography>
+                <Link href={"/blog/" + props.details?.slug}>
+                    <a style={{cursor: 'pointer'}}>
+                        <Typography gutterBottom variant="h2" component="a">
+                            {props.details?.title}
+                        </Typography>
+                    </a>
                 </Link>
                 <Typography variant="body2"
                     // color="textSecondary"
