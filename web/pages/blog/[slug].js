@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import CustomMarkdownRender from './../../components/CustomMarkdownRender';
 import { boxShadow } from 'styled-system';
 import AuthorDetails from '../../components/AuthorDetails';
+import readingTime from 'reading-time';
 
 export default function Post(data) {
 
@@ -13,13 +14,16 @@ export default function Post(data) {
 
     console.log("Post: ", post)
 
+    const rtime = readingTime(post.content);
+    console.log("reading time: ", rtime);
+
     return (
         <div>
             <Container>
                 <Typography variant="h1" component="h2" gutterBottom>
                     {post.title}
                 </Typography>
-                <AuthorDetails details={post.author} date={post.date}></AuthorDetails>
+                <AuthorDetails details={post.author} date={post.date} readingTime={rtime}></AuthorDetails>
                 <div style={{
                     display: "flex",
                     justifyContent: "center",
