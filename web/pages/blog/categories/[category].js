@@ -48,6 +48,18 @@ export async function getStaticProps(context) {
                     title
                     content
                     excerpt
+                    author {
+                        node {
+                          name
+                          nicename
+                          nickname
+                          slug
+                          email
+                          avatar {
+                            url
+                          }
+                        }
+                      }
                     featuredImage {
                         node {
                           sourceUrl
