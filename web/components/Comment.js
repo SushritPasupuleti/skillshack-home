@@ -12,6 +12,7 @@ import { LayoutBottom, LayoutContainer, LayoutLeftSideNav, LayoutThread } from '
 import Divider from '@material-ui/core/Divider';
 import CheckIcon from '@material-ui/icons/Check';
 import BeenhereIcon from '@material-ui/icons/Beenhere';
+import MarkdownPreview from './Markdown';
 
 const useStyles = makeStyles((theme) => ({
     root: {
