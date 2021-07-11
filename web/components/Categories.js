@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const ThreadTags = (props) => {
+const Categories = (props) => {
     const classes = useStyles();
 
     return (
@@ -31,4 +31,4 @@ const ThreadTags = (props) => {
     )
 }
 
-export default ThreadTags
+export default Categories
