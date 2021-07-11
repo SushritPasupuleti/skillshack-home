@@ -25,20 +25,20 @@ const useStyles = makeStyles((theme) => ({
     },
     toolbar: theme.mixins.toolbar,
     hamburger: {
-        display: 'flex',
-        // display: 'none',
-        [theme.breakpoints.up('sm')]: {
-            display: 'none',
-        },
-        [theme.breakpoints.up('md')]: {
-            display: 'none',
-        },
-        [theme.breakpoints.up('lg')]: {
-            display: 'none',
-        },
-        [theme.breakpoints.up('xl')]: {
-            display: 'none',
-        },
+        // display: 'flex',
+        // // display: 'none',
+        // [theme.breakpoints.up('sm')]: {
+        //     display: 'none',
+        // },
+        // [theme.breakpoints.up('md')]: {
+        //     display: 'none',
+        // },
+        // [theme.breakpoints.up('lg')]: {
+        //     display: 'none',
+        // },
+        // [theme.breakpoints.up('xl')]: {
+        //     display: 'none',
+        // },
     },
 }));
 
