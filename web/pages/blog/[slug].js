@@ -31,39 +31,52 @@ export async function getStaticProps(context) {
             query: `
                 query SinglePost($id: ID!, $idType: PostIdType!) {
                     post(id: $id, idType: $idType) {
+                        id
                         title
                         slug
                         content
                         featuredImage {
-                            node {
-                                sourceUrl
-                            }
-                        }
-                        commentCount
-                        comments {
-                            edges {
-                              node {
-                                id
-                                content
-                                date
-                                author {
-                                  node {
-                                    email
-                                    id
-                                    name
-                                    url
-                                    ... on User {
-                                      id
-                                      email
-                                      avatar {
-                                        url
-                                      }
-                                    }
-                                  }
+                          node {
+                            sourceUrl
+                            comments {
+                              edges {
+                                node {
+                                  id
                                 }
                               }
                             }
                           }
+                        }
+                        commentCount
+                        comments {
+                          edges {
+                            node {
+                              id
+                              content
+                              date
+                              author {
+                                node {
+                                  email
+                                  id
+                                  name
+                                  url
+                                  ... on User {
+                                    id
+                                    email
+                                    avatar {
+                                      url
+                                    }
+                                  }
+                                }
+                              }
+                              commentedOn {
+                                node {
+                                  id
+                                }
+                              }
+                            }
+                          }
+                        }
                     }
                 }
             `,
