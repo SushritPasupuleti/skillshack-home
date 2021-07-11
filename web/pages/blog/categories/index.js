@@ -1,10 +1,14 @@
 import Link from 'next/link'
 import Categories from '../../../components/Categories';
+import Typography from '@material-ui/core/Typography';
 
 export default function CategoriesPage(data) {
   console.log("Categories: ", data.categories);
   return (
-    <div>
+    <div style={{marginTop: '1rem', padding: '5%'}}>
+      <Typography variant="h1" component="h2" gutterBottom>
+        Categories
+      </Typography>
       <Categories categories={data.categories.nodes}></Categories>
     </div>
   )
@@ -13,10 +17,10 @@ export default function CategoriesPage(data) {
 export async function getStaticProps(context) {
 
   const res = await fetch('https://dmrks.org/graphql', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-          query: `
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      query: `
           query AllCategoriesQuery {
             categories {
                 nodes {
@@ -27,7 +31,7 @@ export async function getStaticProps(context) {
               }
         }
           `,
-      })
+    })
   })
 
   console.log("check1")
@@ -39,9 +43,9 @@ export async function getStaticProps(context) {
   console.log("Returned: ", json.data.categories.nodes)
 
   return {
-      props: {
-          categories: json.data.categories,
-      },
+    props: {
+      categories: json.data.categories,
+    },
   }
 
 }
