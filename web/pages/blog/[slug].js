@@ -13,14 +13,14 @@ export default function Post(data) {
             <h1>{post.title}</h1>
             {post.featuredImage === undefined ? (<Image width="640" height="426" src={post.featuredImage.node.sourceUrl} />) : (<></>)}
             <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
-            <p>Comments: {post.commentCount}</p>
             {/* <Markdown input={post.content}></Markdown> */}
+            {/* <p>Comments: {post.commentCount}</p>
             {post.comments.edges.map((comment) => {
                 return (
                 // <div dangerouslySetInnerHTML={{ __html: comment.node.content }}></div>
                 <Comment comment={comment.node}></Comment>
                 )
-            })}
+            })} */}
         </div>
     )
 
@@ -44,36 +44,6 @@ export async function getStaticProps(context) {
                             sourceUrl
                             comments {
                               edges {
-                                node {
-                                  id
-                                }
-                              }
-                            }
-                          }
-                        }
-                        commentCount
-                        comments {
-                          edges {
-                            node {
-                              id
-                              content
-                              date
-                              author {
-                                node {
-                                  email
-                                  id
-                                  name
-                                  url
-                                  ... on User {
-                                    id
-                                    email
-                                    avatar {
-                                      url
-                                    }
-                                  }
-                                }
-                              }
-                              commentedOn {
                                 node {
                                   id
                                 }
