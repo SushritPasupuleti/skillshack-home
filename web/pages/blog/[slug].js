@@ -3,6 +3,7 @@ import Comment from '../../components/Comment';
 import Container from '../../components/Container';
 import Markdown from './../../components/Markdown';
 import Typography from '@material-ui/core/Typography';
+import CustomMarkdownRender from './../../components/CustomMarkdownRender';
 
 export default function Post(data) {
 
@@ -22,7 +23,8 @@ export default function Post(data) {
                 }}>
                     {post.featuredImage === undefined ? (<Image width="640" height="426" src={post.featuredImage.node.sourceUrl} />) : (<></>)}
                 </div>
-                <article className="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article>
+                {/* <article className="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article> */}
+                <CustomMarkdownRender className="article-data">{post.content}</CustomMarkdownRender>
                 {/* <Markdown input={post.content}></Markdown> */}
                 {/* <p>Comments: {post.commentCount}</p>
             {post.comments.edges.map((comment) => {
