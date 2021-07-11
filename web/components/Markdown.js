@@ -1,7 +1,7 @@
 import hljs from 'highlight.js'
 import MarkdownIt from 'markdown-it'
 import React from 'react'
-import styles from './Preview.module.css';
+import styles from './Markdown.module.css';
 import DOMPurify from 'isomorphic-dompurify';
 
 export default function MarkdownPreview(props) {
