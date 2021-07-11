@@ -83,9 +83,11 @@ export default function NavBar() {
                         <MenuIcon />
                     </IconButton> */}
                     <Link href={"/"}>
-                        <Typography variant="h6" className={classes.title}>
-                            skillShack(⚡);
-                        </Typography>
+                        <a style={{ cursor: 'pointer' }}>
+                            <Typography variant="h6" className={classes.title}>
+                                skillShack(⚡);
+                            </Typography>
+                        </a>
                     </Link>
                 </Toolbar>
             </AppBar>
