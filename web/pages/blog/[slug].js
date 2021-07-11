@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Markdown from './../../components/Markdown';
 
-export default function Post( data ){
+export default function Post(data) {
 
     const post = data.post;
 
@@ -11,9 +11,12 @@ export default function Post( data ){
         <div>
             <h1>{post.title}</h1>
             {post.featuredImage === undefined ? (<Image width="640" height="426" src={post.featuredImage.node.sourceUrl} />) : (<></>)}
-            <article dangerouslySetInnerHTML={{__html: post.content}}></article>
+            <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
             <p>Comments: {post.commentCount}</p>
             {/* <Markdown input={post.content}></Markdown> */}
+            {post.comments.edges.map((comment) => {
+                return (<li>{comment.node.content}</li>)
+            })}
         </div>
     )
 
