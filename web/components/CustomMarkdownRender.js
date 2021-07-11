@@ -25,7 +25,7 @@ const options = {
       component: Typography,
       props: { gutterBottom: true, variant: 'h4', paragraph: true },
     },
-    p: { component: Typography, variant: 'body1', props: { paragraph: true } },
+    p: { component: Typography, props: { paragraph: true, variant: 'body1' } },
     a: { component: Link },
     li: {
       component: withStyles(styles)(({ classes, ...props }) => (
