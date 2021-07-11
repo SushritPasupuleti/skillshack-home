@@ -21,7 +21,7 @@ export default function Post(data) {
                     display: "flex",
                     justifyContent: "center",
                 }}>
-                    {post.featuredImage === undefined ? (<Image width="640" height="426" src={post.featuredImage.node.sourceUrl} />) : (<></>)}
+                    {post.featuredImage !== undefined ? (<img src={post.featuredImage.node.sourceUrl} />) : (<></>)}
                 </div>
                 {/* <article className="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article> */}
                 <CustomMarkdownRender className="article-data">{post.content}</CustomMarkdownRender>
