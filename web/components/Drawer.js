@@ -14,6 +14,9 @@ import CloseIcon from '@material-ui/icons/Close';
 import IconButton from '@material-ui/core/IconButton';
 import CancelIcon from '@material-ui/icons/Cancel';
 import Typography from '@material-ui/core/Typography';
+import HomeIcon from '@material-ui/icons/Home';
+import CategoryIcon from '@material-ui/icons/Category';
+import BookIcon from '@material-ui/icons/Book';
 
 const useStyles = makeStyles({
     list: {
@@ -49,26 +52,23 @@ const MobileDrawer = ({ toggleDrawer }) => {
                     {/* <ListItemText primary={'skillShack(⚡);'} /> */}
                     <ListItemText>
                         <Typography variant="h4" gutterBottom>
-                        skillShack(⚡);
-      </Typography>
+                            skillShack(⚡);
+                        </Typography>
                     </ListItemText>
                     <ListItemIcon onClick={toggleDrawer(anchor, false)}><CancelIcon className={classes.close} /></ListItemIcon>
                 </ListItem>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
-            <Divider />
-            <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
+                <ListItem button key={1}>
+                    <ListItemIcon><HomeIcon></HomeIcon></ListItemIcon>
+                    <ListItemText primary={"Home"} />
+                </ListItem>
+                <ListItem button key={2}>
+                    <ListItemIcon><BookIcon></BookIcon></ListItemIcon>
+                    <ListItemText primary={"Blog"} />
+                </ListItem>
+                <ListItem button key={3}>
+                    <ListItemIcon><CategoryIcon/></ListItemIcon>
+                    <ListItemText primary={"Categories"} />
+                </ListItem>
             </List>
         </div>
     );
