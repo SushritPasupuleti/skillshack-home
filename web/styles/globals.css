@@ -17,6 +17,10 @@ a {
 
 /* CSS for dangerously set HTML */
 
+.article-data {
+  padding: 5%;
+}
+
 .article-data > p {
   display: flex;
   justify-content: center;
