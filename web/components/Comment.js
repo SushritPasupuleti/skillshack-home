@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { LayoutBottom, LayoutContainer, LayoutLeftSideNav, LayoutThread } from '../../../containers/threads/threadbody.layout.elements';
+import { LayoutBottom, LayoutContainer, LayoutLeftSideNav, LayoutThread } from '../containers/comment.layout.elements';
 import Divider from '@material-ui/core/Divider';
 import CheckIcon from '@material-ui/icons/Check';
 import BeenhereIcon from '@material-ui/icons/Beenhere';
