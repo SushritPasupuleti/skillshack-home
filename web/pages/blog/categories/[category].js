@@ -28,7 +28,7 @@ export default function Home(data) {
             {data.posts.nodes.map((post) => {
                 return (
                     <Post details={post}></Post>
-            )
+                )
             })}
         </div>
     )
@@ -48,6 +48,11 @@ export async function getStaticProps(context) {
                     title
                     content
                     excerpt
+                    featuredImage {
+                        node {
+                          sourceUrl
+                        }
+                      }
                   }
                 }
               }
