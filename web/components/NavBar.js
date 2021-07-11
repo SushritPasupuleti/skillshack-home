@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     },
     appbar: {
         backgroundColor: '#000',
-    }
+    },
+    toolbar: theme.mixins.toolbar,
 }));
 
 export default function NavBar() {
@@ -38,6 +39,7 @@ export default function NavBar() {
                     </Typography>
                 </Toolbar>
             </AppBar>
+            <div className={classes.toolbar} />
         </div>
     );
 }
