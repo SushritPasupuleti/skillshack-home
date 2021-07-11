@@ -48,6 +48,7 @@ export async function getStaticProps(context) {
                     title
                     content
                     excerpt
+                    slug
                     author {
                         node {
                           name
