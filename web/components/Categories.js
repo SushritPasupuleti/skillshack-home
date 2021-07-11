@@ -4,13 +4,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: '1rem',
+        // marginTop: '1rem',
         display: 'flex',
         flexWrap: 'wrap',
         '& > *': {
             margin: theme.spacing(0.5),
         },
-        // paddingLeft: '1rem'
+        paddingLeft: '5%',
+        marginBottom: '1rem',
     },
     chip: {
         // marginRight: '0.5rem',
