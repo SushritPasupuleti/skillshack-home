@@ -33,7 +33,7 @@ export default function Home() {
         <meta name="twitter:image" content="https://www.skillshack.dev/letterLogoClippedColoredSocial.png" />
       </Head>
       <div className={styles.app}>
-        {/* <NavBar /> */}
+        <NavBar />
         <div className={styles.appBody}>
           {/* <Relative pb={5} color="white">
             <Absolute zIndex={1} left={0} right={0} top={0}>
