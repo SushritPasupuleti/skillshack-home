@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Comment from '../../components/Comment';
 import Container from '../../components/Container';
 import Markdown from './../../components/Markdown';
+import Typography from '@material-ui/core/Typography';
 
 export default function Post(data) {
 
@@ -12,7 +13,9 @@ export default function Post(data) {
     return (
         <div>
             <Container>
-                <h1>{post.title}</h1>
+                <Typography variant="h1" component="h2" gutterBottom>
+                    {post.title}
+                </Typography>
                 <div style={{
                     display: "flex",
                     justifyContent: "center",
