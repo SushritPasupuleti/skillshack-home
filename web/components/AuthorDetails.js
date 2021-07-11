@@ -23,8 +23,6 @@ export default function AuthorDetails(props) {
     const classes = useStyles();
     const [bookmarked, setBookmarked] = useState(false)
 
-    console.log("DP: ", props.details.node.avatar.url)
-
     return (
         <div className={classes.root}>
             <CardHeader
