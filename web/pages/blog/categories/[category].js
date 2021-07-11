@@ -39,6 +39,7 @@ export async function getStaticProps(context) {
                     id
                     title
                     content
+                    excerpt
                   }
                 }
               }
