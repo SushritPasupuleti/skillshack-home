@@ -8,6 +8,7 @@ import { boxShadow } from 'styled-system';
 import AuthorDetails from '../../components/AuthorDetails';
 import readingTime from 'reading-time';
 import Categories from '../../components/Categories';
+import NavBar from '../../components/NavBar';
 
 export default function Post(data) {
 
@@ -18,6 +19,7 @@ export default function Post(data) {
 
     return (
         <div>
+            <NavBar></NavBar>
             <Container>
                 <Typography variant="h1" component="h2" gutterBottom>
                     {post.title}
