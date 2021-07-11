@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Post from '../../components/Posts';
 import NavBar from '../../components/NavBar';
 import Head from 'next/head'
-
+import Container from '../../components/Container';
 export default function CategoriesPage(data) {
     console.log("Posts: ", data.posts);
     return (
@@ -27,14 +27,16 @@ export default function CategoriesPage(data) {
                 <meta name="twitter:image" content="https://www.skillshack.dev/letterLogoClippedColoredSocial.png" />
             </Head>
             <NavBar></NavBar>
-            <Typography variant="h1" component="h2" gutterBottom>
-                Home
-            </Typography>
-            {data.posts.nodes.map((post) => {
-                return (
-                    <Post details={post}></Post>
-                )
-            })}
+            <Container>
+                <Typography variant="h1" component="h2" gutterBottom>
+                    Home
+                </Typography>
+                {data.posts.nodes.map((post) => {
+                    return (
+                        <Post details={post}></Post>
+                    )
+                })}
+            </Container>
         </div>
     )
 }
