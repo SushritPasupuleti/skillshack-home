@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import Categories from '../../../components/Categories';
 import Typography from '@material-ui/core/Typography';
+import NavBar from '../../../components/NavBar';
 
 export default function CategoriesPage(data) {
   console.log("Categories: ", data.categories);
   return (
     <div style={{marginTop: '1rem', padding: '5%'}}>
+      <NavBar></NavBar>
       <Typography variant="h1" component="h2" gutterBottom>
         Categories
       </Typography>
