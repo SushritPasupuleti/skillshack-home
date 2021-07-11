@@ -13,7 +13,12 @@ export default function Post(data) {
         <div>
             <Container>
                 <h1>{post.title}</h1>
-                {post.featuredImage === undefined ? (<Image width="640" height="426" src={post.featuredImage.node.sourceUrl} />) : (<></>)}
+                <div style={{
+                    display: "flex",
+                    justifyContent: "center",
+                }}>
+                    {post.featuredImage === undefined ? (<Image width="640" height="426" src={post.featuredImage.node.sourceUrl} />) : (<></>)}
+                </div>
                 <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
                 {/* <Markdown input={post.content}></Markdown> */}
                 {/* <p>Comments: {post.commentCount}</p>
