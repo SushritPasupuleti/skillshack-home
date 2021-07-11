@@ -32,9 +32,9 @@ export default function Posts(props) {
                     </Avatar>
                 }
                 title={props.details?.node?.title}
-                subheader={moment(props.date?).startOf('hour').fromNow()
-                 + " - " + props.readingTime?.text
-            }
+                // subheader={moment(props.date?).startOf('hour').fromNow()
+                //  + " - " + props.readingTime?.text
+            // }
                 // action={
                 //     <IconButton aria-label="bookmark" onClick={() => { setBookmarked(!bookmarked) }}>
                 //         {bookmarked === false ? (<BookmarkBorderIcon />) : (<BookmarkIcon />)}
