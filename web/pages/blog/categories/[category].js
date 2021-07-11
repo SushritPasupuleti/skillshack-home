@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Post from '../../../components/Posts'
 
 export default function Home(data) {
 
@@ -6,23 +7,30 @@ export default function Home(data) {
     console.log("Posts: ", data.posts)
 
     return (
-        <ul>
-            <li>
-                <Link href="/">
-                    <a>Home</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/about">
-                    <a>About Us</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/blog/hello-world">
-                    <a>Blog Post</a>
-                </Link>
-            </li>
-        </ul>
+        // <ul>
+        //     <li>
+        //         <Link href="/">
+        //             <a>Home</a>
+        //         </Link>
+        //     </li>
+        //     <li>
+        //         <Link href="/about">
+        //             <a>About Us</a>
+        //         </Link>
+        //     </li>
+        //     <li>
+        //         <Link href="/blog/hello-world">
+        //             <a>Blog Post</a>
+        //         </Link>
+        //     </li>
+        // </ul>
+        <div>
+            {data.posts.map((post) => {
+                return (
+                    <Post details={post}></Post>
+            )
+            })}
+        </div>
     )
 }
 
