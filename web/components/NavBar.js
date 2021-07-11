@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Drawer } from '@material-ui/core';
 import MobileDrawer from './Drawer';
+import Link from 'next/link'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -67,29 +68,31 @@ export default function NavBar() {
         <div className={classes.root}>
             <AppBar position="fixed" className={classes.appbar}>
                 <Toolbar>
-                <div className={classes.hamburger}>
-                    <IconButton
-                        edge="start"
-                        className={classes.menuButton}
-                        color="inherit"
-                        aria-label="open drawer"
-                        onClick={toggleDrawer(anchor, true)}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                </div>
+                    <div className={classes.hamburger}>
+                        <IconButton
+                            edge="start"
+                            className={classes.menuButton}
+                            color="inherit"
+                            aria-label="open drawer"
+                            onClick={toggleDrawer(anchor, true)}
+                        >
+                            <MenuIcon />
+                        </IconButton>
+                    </div>
                     {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton> */}
-                    <Typography variant="h6" className={classes.title}>
-                        skillShack(⚡);
-                    </Typography>
+                    <Link href={"/"}>
+                        <Typography variant="h6" className={classes.title}>
+                            skillShack(⚡);
+                        </Typography>
+                    </Link>
                 </Toolbar>
             </AppBar>
             <div className={classes.toolbar} />
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {<MobileDrawer toggleDrawer={toggleDrawer} />}
-        </Drawer>
+                {<MobileDrawer toggleDrawer={toggleDrawer} />}
+            </Drawer>
         </div>
     );
 }
