@@ -49,14 +49,14 @@ export default function Posts(props) {
             </div>
             <CardHeader
                 avatar={
-                    <Avatar aria-label="recipe" src={props.details?.avatar?.url} className={classes.avatar}>
+                    <Avatar aria-label="recipe" src={props.details.author.node.avatar.url} className={classes.avatar}>
 
                     </Avatar>
                 }
-                title={props.details?.node?.title}
-            // subheader={moment(props.date?).startOf('hour').fromNow()
-            //  + " - " + props.readingTime?.text
-            // }
+                title={props.details?.author?.name}
+                subheader={moment(props.date).startOf('hour').fromNow()
+                //  + " - " + props.readingTime.text
+            }
             // action={
             //     <IconButton aria-label="bookmark" onClick={() => { setBookmarked(!bookmarked) }}>
             //         {bookmarked === false ? (<BookmarkBorderIcon />) : (<BookmarkIcon />)}
