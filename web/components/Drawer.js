@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     }
 });
 
-export const MobileDrawer = ({ toggleDrawer }) => {
+const MobileDrawer = ({ toggleDrawer }) => {
     const classes = useStyles();
     const [anchor, setanchor] = useState("left");
 
@@ -73,3 +73,5 @@ export const MobileDrawer = ({ toggleDrawer }) => {
         </div>
     );
 }
+
+export default MobileDrawer
