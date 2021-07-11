@@ -7,10 +7,12 @@ import CustomMarkdownRender from './../../components/CustomMarkdownRender';
 import { boxShadow } from 'styled-system';
 import AuthorDetails from '../../components/AuthorDetails';
 import readingTime from 'reading-time';
+import Categories from '../../components/Categories';
 
 export default function Post(data) {
 
     const post = data.post;
+    console.log(post);
 
     const rtime = readingTime(post.content);
 
@@ -21,6 +23,7 @@ export default function Post(data) {
                     {post.title}
                 </Typography>
                 <AuthorDetails details={post.author} date={post.date} readingTime={rtime}></AuthorDetails>
+                <Categories categories={post.categories.nodes}></Categories>
                 <div style={{
                     display: "flex",
                     justifyContent: "center",
@@ -58,6 +61,19 @@ export async function getStaticProps(context) {
                         slug
                         content
                         date
+                        tags {
+                            nodes {
+                              name
+                              slug
+                            }
+                          }
+                          categories {
+                            nodes {
+                              name
+                              link
+                              slug
+                            }
+                          }
                         featuredImage {
                           node {
                             sourceUrl
