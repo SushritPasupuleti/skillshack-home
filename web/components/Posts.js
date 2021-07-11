@@ -12,6 +12,7 @@ import Card from '@material-ui/core/Card';
 import readingTime from 'reading-time';
 import CardContent from '@material-ui/core/CardContent';
 import Link from 'next/link'
+import { Divider } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -86,7 +87,7 @@ export default function Posts(props) {
                     <div dangerouslySetInnerHTML={{ __html: props.details.excerpt }}></div>
                 </Typography>
             </CardContent>
-
+            <Divider />
         </div >
     )
 }
