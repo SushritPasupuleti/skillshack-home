@@ -12,10 +12,7 @@ export default function Post(data) {
 
     const post = data.post;
 
-    console.log("Post: ", post)
-
     const rtime = readingTime(post.content);
-    console.log("reading time: ", rtime);
 
     return (
         <div>
