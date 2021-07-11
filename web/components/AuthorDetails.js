@@ -22,26 +22,26 @@ export default function AuthorDetails(props) {
     const classes = useStyles();
     const [bookmarked, setBookmarked] = useState(false)
 
-    console.log("DP: ", props.thread.thread.display_picture)
+    console.log("DP: ", props.details.node.avatar.url)
 
     return (
         <div className={classes.root}>
             <CardHeader
                 avatar={
-                    <Avatar aria-label="recipe" src={props.thread.thread.display_picture} className={classes.avatar}>
+                    <Avatar aria-label="recipe" src={props.details.node.avatar.url} className={classes.avatar}>
 
                     </Avatar>
                 }
-                title={props.thread?.thread?.author_user_name}
-                subheader={moment(props.thread.thread.createdAt).startOf('hour').fromNow() + " - " + props.thread.thread.reading_time + " min read"}
-                action={
-                    <IconButton aria-label="bookmark" onClick={() => { setBookmarked(!bookmarked) }}>
-                        {bookmarked === false ? (<BookmarkBorderIcon />) : (<BookmarkIcon />)}
-                    </IconButton>
-                }
+                title={props.details?.node?.name}
+                // subheader={moment(props.details.node.createdAt).startOf('hour').fromNow() + " - " + props.details.node.reading_time + " min read"}
+                // action={
+                //     <IconButton aria-label="bookmark" onClick={() => { setBookmarked(!bookmarked) }}>
+                //         {bookmarked === false ? (<BookmarkBorderIcon />) : (<BookmarkIcon />)}
+                //     </IconButton>
+                // }
             />
-            {/* <Typography variant="h6" color="initial">{props.thread?.thread?.author_user_name}</Typography> */}
-            {/* <Typography variant="caption" color="initial">{moment(props.thread.thread.createdAt).startOf('hour').fromNow()}</Typography> */}
+            {/* <Typography variant="h6" color="initial">{props.thread?.thread?.details_user_name}</Typography> */}
+            {/* <Typography variant="caption" color="initial">{moment(props.node.createdAt).startOf('hour').fromNow()}</Typography> */}
         </div>
     )
 }
