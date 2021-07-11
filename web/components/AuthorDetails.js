@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: '-1rem',
         marginBottom: '1rem',
-        paddingLeft: '5%',
+        paddingLeft: '3.5%',
     },
     avatar: {
 
