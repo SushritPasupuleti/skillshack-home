@@ -42,15 +42,19 @@ export default function Posts(props) {
                 display: "flex",
                 justifyContent: "center",
             }}>
-                <img
-                    // className={classes.media}
-                    style={{
-                        width: '90%', marginBottom: '1rem',
-                        // boxShadow: '0 5px 10px rgb(255 255 255 / 12%)' 
-                    }}
-                    src={props.details?.featuredImage?.node?.sourceUrl}
-                // title="Contemplative Reptile"
-                />
+                <Link href={"/blog/" + props.details?.slug}>
+                    <a style={{ cursor: 'pointer' }}>
+                        <img
+                            // className={classes.media}
+                            style={{
+                                width: '90%', marginBottom: '1rem',
+                                // boxShadow: '0 5px 10px rgb(255 255 255 / 12%)' 
+                            }}
+                            src={props.details?.featuredImage?.node?.sourceUrl}
+                        // title="Contemplative Reptile"
+                        />
+                    </a>
+                </Link>
             </div>
             <CardHeader
                 avatar={
@@ -70,7 +74,7 @@ export default function Posts(props) {
             />
             <CardContent style={{ marginTop: '-1rem' }}>
                 <Link href={"/blog/" + props.details?.slug}>
-                    <a style={{cursor: 'pointer'}}>
+                    <a style={{ cursor: 'pointer' }}>
                         <Typography gutterBottom variant="h2" component="a">
                             {props.details?.title}
                         </Typography>
@@ -83,6 +87,6 @@ export default function Posts(props) {
                 </Typography>
             </CardContent>
 
-        </div>
+        </div >
     )
 }
