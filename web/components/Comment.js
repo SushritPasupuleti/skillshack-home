@@ -49,11 +49,13 @@ function Comment(props) {
 
     const comment = props.comment;
 
-    const nestedComments = (props.comment.children || []).map(comment => {
-        return (<div style={{ marginLeft: '1rem' }} key={comment.id}>
-            <Comment comment={comment} isOwner={props.isOwner} />
-        </div>)
-    });
+    // const nestedComments = (props.comment.children || []).map(comment => {
+    //     return (<div style={{ marginLeft: '1rem' }} key={comment.commentedOn.node.id}>
+    //         <Comment comment={comment} isOwner={props.isOwner} />
+    //     </div>)
+    // });
+
+    console.log("Comment: ", comment)
 
     return (
         // <Card className={classes.root}>
@@ -83,14 +85,14 @@ function Comment(props) {
                     </div> */}
                 </LayoutLeftSideNav>
                 <LayoutThread>
-                    <p dangerouslySetInnerHTML={{ __html: comment.content }}></p>
+                    <MarkdownPreview input={comment.content}></MarkdownPreview>
                 </LayoutThread>
                 <LayoutBottom>
                     Bottom links
                 </LayoutBottom>
             </LayoutContainer>
             <Divider style={{ marginTop: '1rem' }} />
-            {nestedComments}
+            {/* {nestedComments} */}
             {/* <BackToTop /> */}
         </div>
     );
