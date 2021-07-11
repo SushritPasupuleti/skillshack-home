@@ -1,0 +1,22 @@
+.markdownDiv img {
+	/* Set width of image to maximum width of Card, height will follow aspect ratio */
+	/* width: 80%; */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.markdownDiv {
+	/* flex-grow: 1; */
+	/* overflow-x: scroll; */
+}
+
+.markdownParent {
+	/* display: flex; */
+}
+
+.markdownDiv iframe {
+	max-width: 100% !important;
+	width: auto !important;
+	height: auto !important;
+}
