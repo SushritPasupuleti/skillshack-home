@@ -19,6 +19,7 @@ export default function Post(data) {
                 <Typography variant="h1" component="h2" gutterBottom>
                     {post.title}
                 </Typography>
+                <AuthorDetails details={post.author} date={post.date}></AuthorDetails>
                 <div style={{
                     display: "flex",
                     justifyContent: "center",
@@ -27,7 +28,6 @@ export default function Post(data) {
                 </div>
                 {/* <article className="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article> */}
                 <CustomMarkdownRender className="article-data">{post.content}</CustomMarkdownRender>
-                <AuthorDetails details={post.author} date={post.date}></AuthorDetails>
                 {/* <Markdown input={post.content}></Markdown> */}
                 {/* <p>Comments: {post.commentCount}</p>
             {post.comments.edges.map((comment) => {

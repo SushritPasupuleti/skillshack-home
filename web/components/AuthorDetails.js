@@ -10,8 +10,9 @@ import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: '1rem',
-        marginBottom: '-1rem',
+        marginTop: '-1rem',
+        marginBottom: '1rem',
+        paddingLeft: '5%',
     },
     avatar: {
 
