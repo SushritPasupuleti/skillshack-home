@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import { useRouter } from 'next/router'
 import NavBar from '../../../components/NavBar';
 import Head from 'next/head'
-
+import Container from '../../../components/Container';
 export default function Home(props) {
 
     // console.log("Context: ", context.params)
@@ -33,16 +33,18 @@ export default function Home(props) {
                 <meta name="twitter:image" content="https://www.skillshack.dev/letterLogoClippedColoredSocial.png" />
             </Head>
             <NavBar></NavBar>
-            <div style={{ padding: '5%' }}>
-                <Typography variant="h1" component="h2" gutterBottom>
-                    {"Category: " + router.query.category}
-                </Typography>
-            </div>
-            {props.posts.nodes.map((post) => {
-                return (
-                    <Post details={post}></Post>
-                )
-            })}
+            <Container>
+                <div style={{ padding: '5%' }}>
+                    <Typography variant="h1" component="h2" gutterBottom>
+                        {"Category: " + router.query.category}
+                    </Typography>
+                </div>
+                {props.posts.nodes.map((post) => {
+                    return (
+                        <Post details={post}></Post>
+                    )
+                })}
+            </Container>
         </div>
     )
 }
