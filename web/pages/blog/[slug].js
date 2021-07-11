@@ -5,6 +5,7 @@ import Markdown from './../../components/Markdown';
 import Typography from '@material-ui/core/Typography';
 import CustomMarkdownRender from './../../components/CustomMarkdownRender';
 import { boxShadow } from 'styled-system';
+import AuthorDetails from '../../components/AuthorDetails';
 
 export default function Post(data) {
 
@@ -26,6 +27,7 @@ export default function Post(data) {
                 </div>
                 {/* <article className="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article> */}
                 <CustomMarkdownRender className="article-data">{post.content}</CustomMarkdownRender>
+                <AuthorDetails details={post.author}></AuthorDetails>
                 {/* <Markdown input={post.content}></Markdown> */}
                 {/* <p>Comments: {post.commentCount}</p>
             {post.comments.edges.map((comment) => {
