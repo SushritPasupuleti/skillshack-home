@@ -19,7 +19,7 @@ const options = {
         variant: 'h5',
       },
     },
-    h2: { component: Typography, props: { gutterBottom: true, variant: 'h6' } },
+    h2: { component: Typography, props: { gutterBottom: true, variant: 'h2' } },
     h3: { component: Typography, props: { gutterBottom: true, variant: 'subtitle1' } },
     h4: {
       component: Typography,
