@@ -22,3 +22,7 @@ a {
   justify-content: center;
   object-fit: cover;
 }
+
+.article-data > h2 {
+  font-size: xxx-large;
+}
