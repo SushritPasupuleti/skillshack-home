@@ -9,6 +9,7 @@ import Avatar from '@material-ui/core/Avatar';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import Card from '@material-ui/core/Card';
+import readingTime from 'reading-time';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,6 +31,8 @@ export default function Posts(props) {
     const [bookmarked, setBookmarked] = useState(false)
 
     console.log("URL: ", props.details.featuredImage.node.sourceUrl)
+
+    const rtime = readingTime(props.details.content);
 
     return (
         <div className={classes.root}>
@@ -55,7 +58,7 @@ export default function Posts(props) {
                 }
                 title={props.details?.author?.name}
                 subheader={moment(props.date).startOf('hour').fromNow()
-                //  + " - " + props.readingTime.text
+                 + " - " + rtime.text
             }
             // action={
             //     <IconButton aria-label="bookmark" onClick={() => { setBookmarked(!bookmarked) }}>
