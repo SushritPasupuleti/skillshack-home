@@ -15,7 +15,7 @@ export default function Post(data) {
             <p>Comments: {post.commentCount}</p>
             {/* <Markdown input={post.content}></Markdown> */}
             {post.comments.edges.map((comment) => {
-                return (<li>{comment.node.content}</li>)
+                return (<div dangerouslySetInnerHTML={{ __html: comment.node.content }}></div>)
             })}
         </div>
     )
