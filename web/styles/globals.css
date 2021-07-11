@@ -17,7 +17,8 @@ a {
 
 /* CSS for dangerously set HTML */
 
-article-data > img {
+.article-data > p {
   display: flex;
   justify-content: center;
+  object-fit: cover;
 }
