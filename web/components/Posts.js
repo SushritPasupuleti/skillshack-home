@@ -67,14 +67,17 @@ export default function Posts(props) {
             //     </IconButton>
             // }
             />
-            <CardContent style={{marginTop: '-1rem'}}>
-                <Typography variant="body2" 
-                // color="textSecondary"
-                 component="p">
-                    <p dangerouslySetInnerHTML={{__html: props.details.excerpt}}></p>
+            <CardContent style={{ marginTop: '-1rem' }}>
+                <Typography gutterBottom variant="h2" component="h2">
+                    {props.details?.title}
+                </Typography>
+                <Typography variant="body2"
+                    // color="textSecondary"
+                    component="p">
+                    <p dangerouslySetInnerHTML={{ __html: props.details.excerpt }}></p>
                 </Typography>
             </CardContent>
-            
+
         </div>
     )
 }
