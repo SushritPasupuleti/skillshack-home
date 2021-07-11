@@ -27,7 +27,7 @@ export default function Post(data) {
                 </div>
                 {/* <article className="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article> */}
                 <CustomMarkdownRender className="article-data">{post.content}</CustomMarkdownRender>
-                <AuthorDetails details={post.author}></AuthorDetails>
+                <AuthorDetails details={post.author} date={post.date}></AuthorDetails>
                 {/* <Markdown input={post.content}></Markdown> */}
                 {/* <p>Comments: {post.commentCount}</p>
             {post.comments.edges.map((comment) => {
@@ -56,6 +56,7 @@ export async function getStaticProps(context) {
                         title
                         slug
                         content
+                        date
                         featuredImage {
                           node {
                             sourceUrl
