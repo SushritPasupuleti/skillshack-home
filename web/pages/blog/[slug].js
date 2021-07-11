@@ -9,6 +9,7 @@ import AuthorDetails from '../../components/AuthorDetails';
 import readingTime from 'reading-time';
 import Categories from '../../components/Categories';
 import NavBar from '../../components/NavBar';
+import Head from 'next/head'
 
 export default function Post(data) {
 
@@ -19,6 +20,24 @@ export default function Post(data) {
 
     return (
         <div style={{ padding: '5%' }}>
+            <Head>
+                <title>skillShack(⚡).Blog;</title>
+                <link rel="icon" href="/applogox64.ico" />
+                <meta name="description" content="The Next-Generation Social Network for Software Professionals." />
+
+                <meta property="og:url" content="https://skillshack.dev" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="skillShack(⚡);" />
+                <meta property="og:description" content="The Next-Generation Social Network for Software Professionals." />
+                <meta property="og:image" content="https://www.skillshack.dev/letterLogoClippedColoredSocial.png" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="skillshack.dev" />
+                <meta property="twitter:url" content="https://skillshack.dev" />
+                <meta name="twitter:title" content="skillShack(⚡);" />
+                <meta name="twitter:description" content="The Next-Generation Social Network for Software Professionals." />
+                <meta name="twitter:image" content="https://www.skillshack.dev/letterLogoClippedColoredSocial.png" />
+            </Head>
             <NavBar></NavBar>
             <Container>
                 <Typography variant="h1" component="h2" gutterBottom>
@@ -30,7 +49,7 @@ export default function Post(data) {
                     display: "flex",
                     justifyContent: "center",
                 }}>
-                    {post.featuredImage !== undefined ? (<img style={{width: '90%', marginBottom: '1rem', boxShadow: '0 5px 10px rgb(255 255 255 / 12%)'}} src={post.featuredImage.node.sourceUrl} />) : (<></>)}
+                    {post.featuredImage !== undefined ? (<img style={{ width: '90%', marginBottom: '1rem', boxShadow: '0 5px 10px rgb(255 255 255 / 12%)' }} src={post.featuredImage.node.sourceUrl} />) : (<></>)}
                 </div>
                 {/* <article className="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article> */}
                 <CustomMarkdownRender className="article-data">{post.content}</CustomMarkdownRender>
