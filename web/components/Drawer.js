@@ -17,6 +17,7 @@ import Typography from '@material-ui/core/Typography';
 import HomeIcon from '@material-ui/icons/Home';
 import CategoryIcon from '@material-ui/icons/Category';
 import BookIcon from '@material-ui/icons/Book';
+import Link from 'next/link'
 
 const useStyles = makeStyles({
     list: {
@@ -57,18 +58,24 @@ const MobileDrawer = ({ toggleDrawer }) => {
                     </ListItemText>
                     <ListItemIcon onClick={toggleDrawer(anchor, false)}><CancelIcon className={classes.close} /></ListItemIcon>
                 </ListItem>
-                <ListItem button key={1}>
-                    <ListItemIcon><HomeIcon></HomeIcon></ListItemIcon>
-                    <ListItemText primary={"Home"} />
-                </ListItem>
-                <ListItem button key={2}>
-                    <ListItemIcon><BookIcon></BookIcon></ListItemIcon>
-                    <ListItemText primary={"Blog"} />
-                </ListItem>
-                <ListItem button key={3}>
-                    <ListItemIcon><CategoryIcon/></ListItemIcon>
-                    <ListItemText primary={"Categories"} />
-                </ListItem>
+                <Link href={"/"}>
+                    <ListItem button key={1}>
+                        <ListItemIcon><HomeIcon></HomeIcon></ListItemIcon>
+                        <ListItemText primary={"Home"} />
+                    </ListItem>
+                </Link>
+                <Link href={"/blog"}>
+                    <ListItem button key={2}>
+                        <ListItemIcon><BookIcon></BookIcon></ListItemIcon>
+                        <ListItemText primary={"Blog"} />
+                    </ListItem>
+                </Link>
+                <Link href={"/blog/categories"}>
+                    <ListItem button key={3}>
+                        <ListItemIcon><CategoryIcon /></ListItemIcon>
+                        <ListItemText primary={"Categories"} />
+                    </ListItem>
+                </Link>
             </List>
         </div>
     );
