@@ -35,6 +35,31 @@ export async function getStaticProps(context) {
                                 sourceUrl
                             }
                         }
+                        commentCount
+                        comments {
+                            edges {
+                              node {
+                                id
+                                content
+                                date
+                                author {
+                                  node {
+                                    email
+                                    id
+                                    name
+                                    url
+                                    ... on User {
+                                      id
+                                      email
+                                      avatar {
+                                        url
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
                     }
                 }
             `,
