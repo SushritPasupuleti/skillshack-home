@@ -10,6 +10,7 @@ import BookmarkIcon from '@material-ui/icons/Bookmark';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import Card from '@material-ui/core/Card';
 import readingTime from 'reading-time';
+import CardContent from '@material-ui/core/CardContent';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -58,15 +59,22 @@ export default function Posts(props) {
                 }
                 title={props.details?.author?.name}
                 subheader={moment(props.date).startOf('hour').fromNow()
-                 + " - " + rtime.text
-            }
+                    + " - " + rtime.text
+                }
             // action={
             //     <IconButton aria-label="bookmark" onClick={() => { setBookmarked(!bookmarked) }}>
             //         {bookmarked === false ? (<BookmarkBorderIcon />) : (<BookmarkIcon />)}
             //     </IconButton>
             // }
             />
-            <p>{props.details.excerpt}</p>
+            <CardContent style={{marginTop: '-1rem'}}>
+                <Typography variant="body2" 
+                // color="textSecondary"
+                 component="p">
+                    <p dangerouslySetInnerHTML={{__html: props.details.excerpt}}></p>
+                </Typography>
+            </CardContent>
+            
         </div>
     )
 }
