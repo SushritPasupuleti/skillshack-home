@@ -3,7 +3,7 @@ import Categories from '../../../components/Categories';
 import Typography from '@material-ui/core/Typography';
 import NavBar from '../../../components/NavBar';
 import Head from 'next/head'
-
+import Container from '../../../components/Container';
 export default function CategoriesPage(data) {
   console.log("Categories: ", data.categories);
   return (
@@ -27,10 +27,12 @@ export default function CategoriesPage(data) {
         <meta name="twitter:image" content="https://www.skillshack.dev/letterLogoClippedColoredSocial.png" />
       </Head>
       <NavBar></NavBar>
-      <Typography variant="h1" component="h2" gutterBottom>
-        Categories
-      </Typography>
-      <Categories categories={data.categories.nodes}></Categories>
+      <Container>
+        <Typography variant="h1" component="h2" gutterBottom>
+          Categories
+        </Typography>
+        <Categories categories={data.categories.nodes}></Categories>
+      </Container>
     </div>
   )
 }
