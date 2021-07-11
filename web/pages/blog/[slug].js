@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Markdown from './../../components/Markdown';
 
 export default function Post( data ){
 
@@ -11,6 +12,7 @@ export default function Post( data ){
             <h1>{post.title}</h1>
             {post.featuredImage === undefined ? (<Image width="640" height="426" src={post.featuredImage.node.sourceUrl} />) : (<></>)}
             <article dangerouslySetInnerHTML={{__html: post.content}}></article>
+            <Markdown input={post.content}></Markdown>
         </div>
     )
 
