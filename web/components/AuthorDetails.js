@@ -33,7 +33,9 @@ export default function AuthorDetails(props) {
                     </Avatar>
                 }
                 title={props.details?.node?.name}
-                // subheader={moment(props.details.node.createdAt).startOf('hour').fromNow() + " - " + props.details.node.reading_time + " min read"}
+                subheader={moment(props.date).startOf('hour').fromNow()
+                //  + " - " + props.details?.node?.reading_time + " min read"
+            }
                 // action={
                 //     <IconButton aria-label="bookmark" onClick={() => { setBookmarked(!bookmarked) }}>
                 //         {bookmarked === false ? (<BookmarkBorderIcon />) : (<BookmarkIcon />)}
