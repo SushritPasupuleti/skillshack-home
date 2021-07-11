@@ -87,7 +87,7 @@ export default function Posts(props) {
                     <div dangerouslySetInnerHTML={{ __html: props.details.excerpt }}></div>
                 </Typography>
             </CardContent>
-            <Divider />
+            <Divider style={{marginBottom: '1rem'}}/>
         </div >
     )
 }
