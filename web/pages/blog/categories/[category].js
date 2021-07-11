@@ -41,7 +41,7 @@ export default function Home(props) {
                 </div>
                 {props.posts.nodes.map((post) => {
                     return (
-                        <Post details={post}></Post>
+                        <Post details={post} key={post.id}></Post>
                     )
                 })}
             </Container>
