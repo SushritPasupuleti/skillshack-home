@@ -14,11 +14,6 @@ import CloseIcon from '@material-ui/icons/Close';
 import IconButton from '@material-ui/core/IconButton';
 import CancelIcon from '@material-ui/icons/Cancel';
 import Typography from '@material-ui/core/Typography';
-import { useDispatch, useSelector } from 'react-redux';
-import { setAuth } from '../../redux/actions/authActions';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { signin, signout, useSession } from 'next-auth/client'
 
 const useStyles = makeStyles({
     list: {
