@@ -18,7 +18,7 @@ export default function Post(data) {
     const rtime = readingTime(post.content);
 
     return (
-        <div>
+        <div style={{ padding: '5%' }}>
             <NavBar></NavBar>
             <Container>
                 <Typography variant="h1" component="h2" gutterBottom>
