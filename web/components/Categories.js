@@ -22,7 +22,7 @@ const Categories = (props) => {
 
     return (
         <div className={classes.root}>
-            {props.thread.tags.map((tag, i) => {
+            {props.categories.map((tag, i) => {
                 return (
                     <Chip color="primary" label={tag.name} key={tag.name} className={classes.chip} />
                 )
