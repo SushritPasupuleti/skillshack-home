@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Post from '../../../components/Posts'
 import Typography from '@material-ui/core/Typography';
 import { useRouter } from 'next/router'
+import NavBar from '../../../components/NavBar';
 
 export default function Home(props) {
 
@@ -12,6 +13,7 @@ export default function Home(props) {
 
     return (
         <div style={{ marginTop: '1rem' }}>
+            <NavBar></NavBar>
             <div style={{ padding: '5%' }}>
                 <Typography variant="h1" component="h2" gutterBottom>
                     {"Category: " + router.query.category}
