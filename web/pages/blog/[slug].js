@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Comment from '../../components/Comment';
 import Markdown from './../../components/Markdown';
 
 export default function Post(data) {
@@ -15,7 +16,10 @@ export default function Post(data) {
             <p>Comments: {post.commentCount}</p>
             {/* <Markdown input={post.content}></Markdown> */}
             {post.comments.edges.map((comment) => {
-                return (<div dangerouslySetInnerHTML={{ __html: comment.node.content }}></div>)
+                return (
+                // <div dangerouslySetInnerHTML={{ __html: comment.node.content }}></div>
+                <Comment comment={comment.node}></Comment>
+                )
             })}
         </div>
     )
