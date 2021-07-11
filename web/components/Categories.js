@@ -1,6 +1,7 @@
 import React from 'react';
 import Chip from '@material-ui/core/Chip';
 import { makeStyles } from '@material-ui/core/styles';
+import Link from 'next/link'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,7 +26,9 @@ const Categories = (props) => {
         <div className={classes.root}>
             {props.categories.map((tag, i) => {
                 return (
-                    <Chip color="primary" label={tag.name} key={tag.name} className={classes.chip} />
+                    <Link key={tag.name} href={"/blog/categories/"+tag.slug}>
+                        <Chip color="primary" label={tag.name} className={classes.chip} />
+                    </Link>
                 )
             })}
         </div>
