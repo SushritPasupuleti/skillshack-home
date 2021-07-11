@@ -25,7 +25,7 @@ export default function Home(data) {
         //     </li>
         // </ul>
         <div>
-            {data.posts.map((post) => {
+            {data.posts.nodes.map((post) => {
                 return (
                     <Post details={post}></Post>
             )
