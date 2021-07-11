@@ -19,7 +19,7 @@ export default function Post(data) {
                 }}>
                     {post.featuredImage === undefined ? (<Image width="640" height="426" src={post.featuredImage.node.sourceUrl} />) : (<></>)}
                 </div>
-                <article class="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article>
+                <article className="article-data" dangerouslySetInnerHTML={{ __html: post.content }}></article>
                 {/* <Markdown input={post.content}></Markdown> */}
                 {/* <p>Comments: {post.commentCount}</p>
             {post.comments.edges.map((comment) => {
