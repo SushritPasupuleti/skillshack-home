@@ -59,7 +59,10 @@ export default function Home() {
           </Hero>
           <Heading color="white" textAlign="center">What's inside?</Heading>
           <Flex color="white" flexWrap="wrap" justifyContent="center">
-            <Feature icon="💡" description="Share Ideas">
+            <Feature icon="💡" description="Get inspiration for your next project">
+              Project Ideas
+            </Feature>
+            <Feature icon="📚" description="Share Ideas">
               Blogs, Videos, Podcasts
             </Feature>
             <Feature icon="✨" description="Stay upto date with the newest technologies and trends">
@@ -108,7 +111,7 @@ export default function Home() {
               </Contributor>
               <Contributor
                 fullName="Vamsi Krishna Narra"
-                title="Head of Marketing and Design"
+                title="Marketing and Design"
                 avatar="obama.jpg"
               >
                 <Flex>
