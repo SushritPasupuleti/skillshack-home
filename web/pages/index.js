@@ -94,6 +94,7 @@ export default function Home() {
               'Create',
               'Share',
               'Discuss',
+              'Learn',
               'Grow',
             ]} />
             <CallToAction
