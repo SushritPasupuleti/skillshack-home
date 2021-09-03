@@ -9,7 +9,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Drawer } from '@material-ui/core';
 import MobileDrawer from './Drawer';
 import Link from 'next/link'
-
+import { Provider, Heading, Subhead, NavLink, Relative, Absolute, Small, Pre } from 'rebass'
+import {
+    Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist, Contributor
+  } from 'react-landing-page'
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -67,29 +70,15 @@ export default function NavBar() {
     return (
         <div className={classes.root}>
             <AppBar position="fixed" className={classes.appbar}>
-                <Toolbar>
-                    <div className={classes.hamburger}>
-                        <IconButton
-                            edge="start"
-                            className={classes.menuButton}
-                            color="inherit"
-                            aria-label="open drawer"
-                            onClick={toggleDrawer(anchor, true)}
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                    </div>
-                    {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon />
-                    </IconButton> */}
-                    <Link href={"/"}>
-                        <a style={{ cursor: 'pointer' }}>
-                            <Typography variant="h6" className={classes.title}>
-                                skillShack(⚡);
-                            </Typography>
-                        </a>
-                    </Link>
-                </Toolbar>
+                <Relative pb={5}>
+                    <Absolute zIndex={1} left={0} right={0} top={0}>
+                        <Flex is="header" p={3}>
+                            <NavLink href="/" fontSize={3}>skillShack(⚡);</NavLink>
+                            {/* <NavLink href="#" ml='auto'>Link 1</NavLink> */}
+                            {/* <NavLink href="#">Link 2</NavLink> */}
+                        </Flex>
+                    </Absolute>
+                </Relative>
             </AppBar>
             <div className={classes.toolbar} />
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
