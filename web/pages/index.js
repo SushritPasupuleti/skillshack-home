@@ -62,6 +62,12 @@ export default function Home() {
             <Feature icon="💡" description="Get inspiration for your next project">
               Project Ideas
             </Feature>
+            <Feature icon="🌟" description="Share what you are working on and get quality feedback">
+              Showcase your Projects
+            </Feature>
+            <Feature icon="🧪" description="Weekly challenges to test your coding skills">
+              Challenges
+            </Feature>
             <Feature icon="📚" description="Share Ideas">
               Blogs, Videos, Podcasts
             </Feature>
