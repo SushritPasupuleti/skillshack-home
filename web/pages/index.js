@@ -11,6 +11,7 @@ import {
 } from 'react-landing-page'
 import Button from '@material-ui/core/Button';
 
+
 export default function Home() {
   return (
     <>
@@ -47,12 +48,15 @@ export default function Home() {
             bg="black"
           // backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
           >
-            <Heading>skillShack(⚡);</Heading>
-            <Subhead style={{ textAlign: 'center' }}>The Next-Generation Social Network for Software Professionals.</Subhead>
+            {/* <Heading>skillShack(⚡);</Heading> */}
+            <Typography variant="h1" color="initial">skillShack(⚡);</Typography>
+            <Typography style={{ textAlign: 'center' }} variant="h6" color="initial">The Next-Generation Social Network for Software Professionals.</Typography>
+            {/* <Subhead style={{ textAlign: 'center' }}>The Next-Generation Social Network for Software Professionals.</Subhead> */}
             {/* <Image
             src="/undraw_career_progress_ivdb.svg"
             width={500}
             height={500}></Image> */}
+            <br/>
             <CallToAction
               mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon! Get Nofified</a></CallToAction>
             <ScrollDownIndicator />
