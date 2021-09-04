@@ -11,7 +11,6 @@ import {
 } from 'react-landing-page'
 import Button from '@material-ui/core/Button';
 
-
 export default function Home() {
   return (
     <>
@@ -56,9 +55,15 @@ export default function Home() {
             src="/undraw_career_progress_ivdb.svg"
             width={500}
             height={500}></Image> */}
-            <br/>
+            <br />
             <CallToAction
               mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon! Get Nofified</a></CallToAction>
+            <Image
+              src={'/mainGraphic1.png'}
+              // layout="responsive"
+              height={1920}
+              width={1920}
+            />
             <ScrollDownIndicator />
           </Hero>
           <Heading color="white" textAlign="center">What's inside?</Heading>
@@ -88,12 +93,11 @@ export default function Home() {
               ???
             </Feature>
           </Flex>
-          <Section
+          {/* <Section
             bg='black'
             color="white"
             heading="What no Social Network has done before for Professionals"
             subhead="Gamify learning!">
-            {/* Learn while you scroll through feeds endlessly. */}
             <Checklist children={[
               'Create',
               'Share',
@@ -103,7 +107,7 @@ export default function Home() {
             ]} />
             <CallToAction
             ><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Get Notified!</a></CallToAction>
-          </Section>
+          </Section> */}
           <Section
             // style={{ marginTop: '-6rem' }}
             bg='black'
