@@ -12,7 +12,7 @@ import Link from 'next/link'
 import { Provider, Heading, Subhead, NavLink, Relative, Absolute, Small, Pre } from 'rebass'
 import {
     Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist, Contributor
-  } from 'react-landing-page'
+} from 'react-landing-page'
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -74,7 +74,12 @@ export default function NavBar() {
                     <Absolute zIndex={1} left={0} right={0} top={0}>
                         <Flex is="header" p={3}>
                             <NavLink href="/" fontSize={3}>skillShack(⚡);</NavLink>
-                            {/* <NavLink href="#" ml='auto'>Link 1</NavLink> */}
+                            <NavLink href="#" ml='auto' style={{visibility: "hidden"}}>Sign Up!</NavLink>
+                            <Button variant="contained" color="primary" ml='auto'>
+                                <a href="https://forms.gle/pxkC7VqkKqFVkS1s6">
+                                    Sign Up!
+                                </a>
+                            </Button>
                             {/* <NavLink href="#">Link 2</NavLink> */}
                         </Flex>
                     </Absolute>
