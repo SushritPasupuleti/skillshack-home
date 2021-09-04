@@ -93,7 +93,7 @@ export default function Home() {
               ???
             </Feature>
           </Flex>
-          <Section
+          {/* <Section
             bg='black'
             color="white"
             heading="What no Social Network has done before for Professionals"
@@ -107,7 +107,7 @@ export default function Home() {
             ]} />
             <CallToAction
             ><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Get Notified!</a></CallToAction>
-          </Section>
+          </Section> */}
           <Section
             // style={{ marginTop: '-6rem' }}
             bg='black'
