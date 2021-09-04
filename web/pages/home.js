@@ -3,7 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Typography from '@material-ui/core/Typography'
 import NavBar from '../components/NavBar'
-
+import Header from '../components/sections/Header'
+import { Provider, Heading, Subhead, NavLink, Relative, Absolute, Small, Pre } from 'rebass'
+import {
+    Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist, Contributor
+} from 'react-landing-page'
 export default function Home() {
     return (
         <>
@@ -25,10 +29,30 @@ export default function Home() {
                 <meta name="twitter:description" content="The Next-Generation Social Network for Software Professionals." />
                 <meta name="twitter:image" content="https://www.skillshack.dev/letterLogoClippedColoredSocial.png" />
             </Head>
-            <div className={styles.app}>
+            <div className={styles.app}
+            >
                 <NavBar />
-                <div className={styles.appBody}>
-
+                <div
+                    className={styles.appBody}
+                >
+                    <Hero
+                        color="white"
+                        bg="black"
+                    // backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
+                    >
+                        {/* <Heading>skillShack(⚡);</Heading> */}
+                        <Typography variant="h1" color="initial">skillShack(⚡);</Typography>
+                        <Typography style={{ textAlign: 'center' }} variant="h6" color="initial">The Next-Generation Social Network for Software Professionals.</Typography>
+                        {/* <Subhead style={{ textAlign: 'center' }}>The Next-Generation Social Network for Software Professionals.</Subhead> */}
+                        {/* <Image
+            src="/undraw_career_progress_ivdb.svg"
+            width={500}
+            height={500}></Image> */}
+                        <br />
+                        <CallToAction
+                            mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon! Get Nofified</a></CallToAction>
+                        <ScrollDownIndicator />
+                    </Hero>
                 </div>
             </div>
         </>
