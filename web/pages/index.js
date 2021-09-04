@@ -10,7 +10,7 @@ import {
   Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist, Contributor
 } from 'react-landing-page'
 import Button from '@material-ui/core/Button';
-
+import mainGraphic from '../public/mainGraphic1.png';
 
 export default function Home() {
   return (
@@ -59,6 +59,7 @@ export default function Home() {
             <br/>
             <CallToAction
               mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon! Get Nofified</a></CallToAction>
+              <Image src={mainGraphic} layout="fill"/>
             <ScrollDownIndicator />
           </Hero>
           <Heading color="white" textAlign="center">What's inside?</Heading>
