@@ -93,7 +93,6 @@ export default function Home() {
             color="white"
             heading="What no Social Network has done before for Professionals"
             subhead="Gamify learning!">
-            {/* Learn while you scroll through feeds endlessly. */}
             <Checklist children={[
               'Create',
               'Share',
