@@ -89,7 +89,7 @@ export default function Home() {
             <Feature icon="💼" description="Find jobs, create jobs, get the job done!">
               Jobs/Internships
             </Feature>
-            <Feature icon="🔮" description="And many more...">
+            <Feature icon="🔮" description="And more...">
               ???
             </Feature>
           </Flex>
