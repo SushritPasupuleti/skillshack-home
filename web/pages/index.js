@@ -48,7 +48,7 @@ export default function Home() {
           // backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
           >
             {/* <Heading>skillShack(⚡);</Heading> */}
-            <div style={{marginTop: '2rem'}}></div>
+            <div style={{ marginTop: '2rem' }}></div>
             <Typography variant="h1" color="initial">skillShack(⚡);</Typography>
             <Typography style={{ textAlign: 'center' }} variant="h6" color="initial">The Next-Generation Social Network for Software Professionals.</Typography>
             {/* <Subhead style={{ textAlign: 'center' }}>The Next-Generation Social Network for Software Professionals.</Subhead> */}
@@ -59,12 +59,21 @@ export default function Home() {
             <br />
             <CallToAction
               mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon! Get Nofified</a></CallToAction>
-            <Image
-              src={'/mainGraphic1.png'}
-              // layout="responsive"
-              height={1920}
-              width={1920}
-            />
+            <div
+              style={{ width: '100%', height: '100vh', position: 'relative' }}
+            >
+              <Image
+                // style={{
+                //   maxHeight: '100vh'
+                // }}
+                src={'/mainGraphic1.png'}
+                // layout="responsive"
+                layout="fill"
+                objectFit="contain"
+              // height={1920}
+              // width={1920}
+              />
+            </div>
             <ScrollDownIndicator />
           </Hero>
           <Heading color="white" textAlign="center">What's inside?</Heading>
