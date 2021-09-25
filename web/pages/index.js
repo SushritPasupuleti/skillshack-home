@@ -10,8 +10,11 @@ import {
   Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist, Contributor
 } from 'react-landing-page'
 import Button from '@material-ui/core/Button';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 export default function Home() {
+  const matches = useMediaQuery('(min-width:600px)');
+
   return (
     <>
       <Head>
@@ -60,7 +63,7 @@ export default function Home() {
             <CallToAction
               mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon! Get Nofified</a></CallToAction>
             <div
-              style={{ width: '100%', height: '100vh', position: 'relative' }}
+              style={{ width: '100%', height: (matches ? '100vh' : '50vh'), position: 'relative' }}
             >
               <Image
                 // style={{
