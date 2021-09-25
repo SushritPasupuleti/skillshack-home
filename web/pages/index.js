@@ -48,6 +48,7 @@ export default function Home() {
           // backgroundImage="https://source.unsplash.com/jxaj-UrzQbc/1600x900"
           >
             {/* <Heading>skillShack(⚡);</Heading> */}
+            <div style={{marginTop: '2rem'}}></div>
             <Typography variant="h1" color="initial">skillShack(⚡);</Typography>
             <Typography style={{ textAlign: 'center' }} variant="h6" color="initial">The Next-Generation Social Network for Software Professionals.</Typography>
             {/* <Subhead style={{ textAlign: 'center' }}>The Next-Generation Social Network for Software Professionals.</Subhead> */}
