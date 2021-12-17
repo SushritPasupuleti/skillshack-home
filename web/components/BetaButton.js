@@ -87,7 +87,7 @@ export const BetaButton = () => {
                     marginRight: '1rem',
                     marginLeft: '1rem',
                 }}
-                    size="large"
+                    // size="large"
                 >
                     <b>
                         We are in Beta 🎉
