@@ -14,6 +14,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 export default function Home() {
   const matches = useMediaQuery('(min-width:600px)');
+  const matchesBanners = useMediaQuery('(min-width:760px)');
 
   return (
     <>
@@ -106,6 +107,64 @@ export default function Home() {
               ???
             </Feature>
           </Flex>
+          {
+            matchesBanners === true ? (
+              <Image
+                src={`/assets/banner-1.png`}
+                alt="Picture of the author"
+                width={1500}
+                height={500}
+                layout="responsive"
+              />
+            ) : (
+              <Image
+                src={`/assets/banner-m-1.png`}
+                alt="Picture of the author"
+                width={2560}
+                height={1440}
+                layout="responsive"
+              />
+            )
+          }
+          {
+            matchesBanners === true ? (
+              <Image
+                src={`/assets/banner-2.png`}
+                alt="Picture of the author"
+                width={1500}
+                height={500}
+                layout="responsive"
+              />
+            ) : (
+              <Image
+                src={`/assets/banner-m-2.png`}
+                alt="Picture of the author"
+                width={2560}
+                height={1440}
+                layout="responsive"
+              />
+            )
+          }
+          {
+            matchesBanners === true ? (
+              <Image
+                src={`/assets/banner-3.png`}
+                alt="Picture of the author"
+                width={1500}
+                height={500}
+                layout="responsive"
+              />
+            ) : (
+              <Image
+                src={`/assets/banner-m-3.png`}
+                alt="Picture of the author"
+                width={2560}
+                height={1440}
+                layout="responsive"
+              />
+            )
+          }
+          {/* <br /> */}
           {/* <Section
             bg='black'
             color="white"
