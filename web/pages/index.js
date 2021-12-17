@@ -11,6 +11,7 @@ import {
 } from 'react-landing-page'
 import Button from '@material-ui/core/Button';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { BetaButton } from '../components/BetaButton'
 
 export default function Home() {
   const matches = useMediaQuery('(min-width:600px)');
@@ -63,6 +64,7 @@ export default function Home() {
             <br />
             <CallToAction
               mt={3}><a href='https://forms.gle/pxkC7VqkKqFVkS1s6' target="_blank">Coming Soon! Get Nofified</a></CallToAction>
+            {/* <BetaButton/> */}
             <div
               style={{ width: '100%', height: (matches ? '100vh' : '50vh'), position: 'relative' }}
             >
