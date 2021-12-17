@@ -78,17 +78,24 @@ const theme = createMuiTheme({
 export const BetaButton = () => {
     return (
         <ThemeProvider theme={theme}>
-            <Link href={`/progress`}>
-                <a>
-                    <Button variant="outlined" color="primary" style={{
-                        borderRadius: '1rem',
-                    }}>
-                        <b>
-                            We are in Beta 🎉
-                        </b>
-                    </Button>
-                </a>
-            </Link>
+            {/* <Link href={`/progress`}>
+                <a> */}
+            <a href='https://forms.gle/pxkC7VqkKqFVkS1s6'>
+                <Button variant="outlined" color="primary" style={{
+                    borderRadius: '1rem',
+                    // border: '1px solid',
+                    marginRight: '1rem',
+                    marginLeft: '1rem',
+                }}
+                    size="large"
+                >
+                    <b>
+                        We are in Beta 🎉
+                    </b>
+                </Button>
+            </a>
+            {/* </a>
+            </Link> */}
         </ThemeProvider>
     )
 }
