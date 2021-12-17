@@ -113,7 +113,7 @@ export default function Home() {
             matchesBanners === true ? (
               <Image
                 src={`/assets/banner-1.png`}
-                alt="Picture of the author"
+                alt="Banner"
                 width={1500}
                 height={500}
                 layout="responsive"
@@ -121,7 +121,7 @@ export default function Home() {
             ) : (
               <Image
                 src={`/assets/banner-m-1.png`}
-                alt="Picture of the author"
+                alt="Banner"
                 width={2560}
                 height={1440}
                 layout="responsive"
@@ -132,7 +132,7 @@ export default function Home() {
             matchesBanners === true ? (
               <Image
                 src={`/assets/banner-2.png`}
-                alt="Picture of the author"
+                alt="Banner"
                 width={1500}
                 height={500}
                 layout="responsive"
@@ -140,7 +140,7 @@ export default function Home() {
             ) : (
               <Image
                 src={`/assets/banner-m-2.png`}
-                alt="Picture of the author"
+                alt="Banner"
                 width={2560}
                 height={1440}
                 layout="responsive"
@@ -151,7 +151,7 @@ export default function Home() {
             matchesBanners === true ? (
               <Image
                 src={`/assets/banner-3.png`}
-                alt="Picture of the author"
+                alt="Banner"
                 width={1500}
                 height={500}
                 layout="responsive"
@@ -159,7 +159,7 @@ export default function Home() {
             ) : (
               <Image
                 src={`/assets/banner-m-3.png`}
-                alt="Picture of the author"
+                alt="Banner"
                 width={2560}
                 height={1440}
                 layout="responsive"
