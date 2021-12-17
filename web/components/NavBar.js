@@ -13,6 +13,7 @@ import { Provider, Heading, Subhead, NavLink, Relative, Absolute, Small, Pre } f
 import {
     Hero, CallToAction, ScrollDownIndicator, Flex, Feature, Section, Checklist, Contributor
 } from 'react-landing-page'
+import { BetaButton } from './BetaButton';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -75,6 +76,7 @@ export default function NavBar() {
                         <Flex is="header" p={3}>
                             <NavLink href="/" fontSize={3}>skillShack(⚡);</NavLink>
                             <NavLink href="#" ml='auto' style={{visibility: "hidden"}}>Sign Up!</NavLink>
+                            <BetaButton/>
                             <Button variant="contained" color="primary" ml='auto'>
                                 <a href="https://forms.gle/pxkC7VqkKqFVkS1s6">
                                     Sign Up!
