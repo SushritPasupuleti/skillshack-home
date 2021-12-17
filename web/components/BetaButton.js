@@ -1,10 +1,11 @@
 import React from 'react';
-import { createTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { red } from '@material-ui/core/colors';
 import Link from 'next/link';
 
-const theme = createTheme({
+const theme = createMuiTheme({
     palette: {
         primary: red,
     },
